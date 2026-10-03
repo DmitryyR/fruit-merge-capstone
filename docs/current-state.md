@@ -2,6 +2,8 @@
 
 04.10.2026. Користувач погодив план. Гру реалізовано; навчальна здача ще не завершена.
 
+Оформлення оновлено за погодженим макетом: садовий фон, кремові панелі, 30 нових фруктів у порядку референсів. Посудина та фізика збережені. Користувач дозволив оптимізацію: 31 ресурс зменшено з 52 455 221 до 797 534 байтів. Оптимізована версія пройшла check (68 unit + 6 integration + 24 browser, exit 0); [лог](evidence/runs/visual-optimized-check.log). Desktop 1440×900 та mobile 390×844 оглянуто, overflow немає. Окремий review цього оновлення та оновлення PR ще виконуються.
+
 - Окремий repo: https://github.com/DmitryyR/fruit-merge-capstone, гілка codex/fruit-merge-capstone. SalesHub не змінювався.
 - T0: docs-only commit c941d33 до тестів і коду.
 - T1–T4: 30 рівнів/ресурсів, фізика, input, merge, pause/gameOver/restart, рекорд, адаптивний HUD, check і CI.

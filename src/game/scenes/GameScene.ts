@@ -21,11 +21,15 @@ export class GameScene extends Phaser.Scene {
  constructor(){super('Game');}
  create(){
   this.state=createSession(Math.random,readBest(this.storage));installWalls(this);
-  const bg=this.add.graphics();bg.lineStyle(1,0xa4b88c,0.28);for(let y=170;y<696;y+=32){for(let x=45;x<456;x+=32)bg.fillStyle(0xc6d5b1,0.4).fillCircle(x,y,1);}
-  bg.lineStyle(1.5,0xc58b69,0.65);for(let x=24;x<456;x+=13)bg.lineBetween(x,140,x+6,140);
-  this.add.text(34,119,'ЗАЛИШ МІСЦЕ ДЛЯ ВРОЖАЮ',{fontFamily:'Arial',fontSize:'9px',color:'#af987d',letterSpacing:1});
-  bg.lineStyle(3,0xb7c8a1,0.7).strokeRoundedRect(23,149,434,546,{tl:0,tr:0,bl:25,br:25});
-  this.guide=this.add.graphics();this.preview=this.add.image(this.aim,config.spawnY,getFruitDefinition(this.state.currentRank).id).setAlpha(0.8);
+  const bg=this.add.graphics();
+  // Glass decor follows the existing inner wall faces; physics stays unchanged.
+  bg.lineStyle(9,0xffffff,0.4).lineBetween(17,28,17,699).lineBetween(463,28,463,699).lineBetween(17,703,463,703);
+  bg.lineStyle(3,0x7d9275,0.75).lineBetween(config.left,24,config.left,config.bottom).lineBetween(config.right,24,config.right,config.bottom).lineBetween(config.left,config.bottom,config.right,config.bottom);
+  bg.lineStyle(2,0xffffff,0.9).lineBetween(20,25,20,695).lineBetween(460,25,460,695).lineBetween(20,699,460,699);
+  bg.lineStyle(4,0xfff3cb,0.9).strokeRoundedRect(14,16,452,12,6);
+  bg.lineStyle(2,0xdb725c,0.8);for(let x=config.left;x<config.right;x+=17)bg.lineBetween(x,config.dangerY,Math.min(x+9,config.right),config.dangerY);
+  this.add.text(34,119,'ЗАЛИШ МІСЦЕ ДЛЯ ВРОЖАЮ',{fontFamily:'Arial',fontSize:'9px',color:'#885539',letterSpacing:1});
+  this.guide=this.add.graphics();this.preview=this.add.image(this.aim,config.spawnY,getFruitDefinition(this.state.currentRank).id);
   this.coordinator=new MergeCoordinator({get:id=>this.fruitBodies.get(id),mode:()=>this.state.mode,replace:(a,b,rank)=>{
    const first=this.fruitBodies.get(a.id)!,second=this.fruitBodies.get(b.id)!;
    const x=clampDropX((first.image.x+second.image.x)/2,getFruitDefinition(rank).radius),y=(first.image.y+second.image.y)/2;
@@ -63,6 +67,6 @@ export class GameScene extends Phaser.Scene {
   }
  }
  paint(){renderHud(this.state);this.paintGuide();}
- private paintGuide(){if(!this.preview)return;const f=getFruitDefinition(this.state.currentRank);const x=clampDropX(this.aim,f.radius);this.preview.setTexture(f.id).setDisplaySize(f.radius*2,f.radius*2).setPosition(x,config.spawnY).setVisible(this.state.mode==='playing');this.guide.clear();if(this.state.mode==='playing'){this.guide.lineStyle(1,0x91a97c,0.35);for(let y=95;y<680;y+=14)this.guide.lineBetween(x,y,x,y+4);}}
+ private paintGuide(){if(!this.preview)return;const f=getFruitDefinition(this.state.currentRank);const x=clampDropX(this.aim,f.radius);this.preview.setTexture(f.id).setDisplaySize(f.radius*2,f.radius*2).setPosition(x,config.spawnY).setVisible(this.state.mode==='playing');this.guide.clear();if(this.state.mode==='playing'){for(let y=100;y<680;y+=18)this.guide.fillStyle(0xffffff,0.7).fillCircle(x,y,2);}}
  textureCount(){return fruits.filter(f=>this.textures.exists(f.id)).length;}
 }

@@ -1,0 +1,436 @@
+[
+  {
+    "file": "public/assets/fruits/fruit-01.webp",
+    "source_sha256": "719fc4bae9efeac73670af1cde1accc2d32921cddfac01641a8628b44a796f81",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1610948,
+    "bytes": 20158
+  },
+  {
+    "file": "public/assets/fruits/fruit-02.webp",
+    "source_sha256": "3ad29d1980f72a1ece429d68c76e43f749fd5e0394b2a26f3a2f3b2815874a41",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1425650,
+    "bytes": 16780
+  },
+  {
+    "file": "public/assets/fruits/fruit-03.webp",
+    "source_sha256": "23f17b2e73e6df78a7bad975c83e9dccd2b3e0bfcdeecea3e8d89f846401dd06",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1313599,
+    "bytes": 17134
+  },
+  {
+    "file": "public/assets/fruits/fruit-04.webp",
+    "source_sha256": "3ce092c649cbe3c84379e5b7d2d77e0ddcf8abd39b10a6b0a99926e4e2396920",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1660546,
+    "bytes": 22550
+  },
+  {
+    "file": "public/assets/fruits/fruit-05.webp",
+    "source_sha256": "41bfa93dab02cb705d165679b94cbec350a92cbabfa06ab7992bcc64cdd8e60a",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1573034,
+    "bytes": 22710
+  },
+  {
+    "file": "public/assets/fruits/fruit-06.webp",
+    "source_sha256": "48638b725214516a52c9d5a03e0a9806fed43771197c69d26462a00c6ee32e67",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1439316,
+    "bytes": 18378
+  },
+  {
+    "file": "public/assets/fruits/fruit-07.webp",
+    "source_sha256": "cbea48e1b49fc5b7dd17e3c48ce92584dd5492eced549bf8349c017ae5882831",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1482761,
+    "bytes": 18004
+  },
+  {
+    "file": "public/assets/fruits/fruit-08.webp",
+    "source_sha256": "06b683675d3ae0dd2f0db1732247fd6e19ada1b2d49918f02000885314db0c62",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1697733,
+    "bytes": 23266
+  },
+  {
+    "file": "public/assets/fruits/fruit-09.webp",
+    "source_sha256": "2c0d204341e63e9904bbe5cf30bd4b07856eb8fca9b281f9d0d5606e7f3687c0",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1643426,
+    "bytes": 20318
+  },
+  {
+    "file": "public/assets/fruits/fruit-10.webp",
+    "source_sha256": "808b6fc36b3cd0ebb917c4f06b181f6dc964944bff3dd793126abc3355a2dcdd",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1908853,
+    "bytes": 26004
+  },
+  {
+    "file": "public/assets/fruits/fruit-11.webp",
+    "source_sha256": "7709b684957dad9a557634000f63b915162abb38a9eb65a0100a3348917b3286",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1875556,
+    "bytes": 22646
+  },
+  {
+    "file": "public/assets/fruits/fruit-12.webp",
+    "source_sha256": "65471fd4fd7635e9281a4e9a3521defe0e841ea132cae1889cc23166d02917d7",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1833774,
+    "bytes": 20602
+  },
+  {
+    "file": "public/assets/fruits/fruit-13.webp",
+    "source_sha256": "7bd40641c3709dd3fbd5aa0448ee03693640b913744dcf0e79c611626147b2e4",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1703245,
+    "bytes": 22260
+  },
+  {
+    "file": "public/assets/fruits/fruit-14.webp",
+    "source_sha256": "ed8cbfe18187f14546affffe2166d5d041ca08c3a4cebf057d146c1b254bf073",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 2019421,
+    "bytes": 27400
+  },
+  {
+    "file": "public/assets/fruits/fruit-15.webp",
+    "source_sha256": "fb958fbcce48c6482d7612ade41cef572866c0bb5959807febe460b9bb4b8daa",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1437310,
+    "bytes": 18864
+  },
+  {
+    "file": "public/assets/fruits/fruit-16.webp",
+    "source_sha256": "1cd784b2417ed170f151aeb98e4b780b23f2520d98e783017d1b9d1759132433",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1622317,
+    "bytes": 21856
+  },
+  {
+    "file": "public/assets/fruits/fruit-17.webp",
+    "source_sha256": "419806efde00cd0a324aa536ec69efd528a45ecea3b6f1d0d8d50d16ddf6b975",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1473946,
+    "bytes": 18056
+  },
+  {
+    "file": "public/assets/fruits/fruit-18.webp",
+    "source_sha256": "b1fd6979d173409122d5db34200b8f7e12906659ec5fbf7036dbc82b388216a9",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1656787,
+    "bytes": 19968
+  },
+  {
+    "file": "public/assets/fruits/fruit-19.webp",
+    "source_sha256": "eb31427dff06a920f0d71e9887918930bef0a025515b3321093682aa818f4716",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1617950,
+    "bytes": 18432
+  },
+  {
+    "file": "public/assets/fruits/fruit-20.webp",
+    "source_sha256": "82ef2f3f9a792ef557e4e3afed76ef7a266a5c92939cba4bb0238694999094a8",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1710844,
+    "bytes": 21606
+  },
+  {
+    "file": "public/assets/fruits/fruit-21.webp",
+    "source_sha256": "dbae3b19f969d2327fcb1394ab8ad479229bda983960a2d04f21600f05c642c8",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1945833,
+    "bytes": 22382
+  },
+  {
+    "file": "public/assets/fruits/fruit-22.webp",
+    "source_sha256": "4e2d92b6de752ed28c0f3e20fe92733ebcb29c5826f9d7842c26b3cf67f5ac42",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1602953,
+    "bytes": 19000
+  },
+  {
+    "file": "public/assets/fruits/fruit-23.webp",
+    "source_sha256": "3461868e3d7f1d5b49cef5c76eeb43bc82135863050fc06d659cfa4bd66f0cb8",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1997331,
+    "bytes": 25084
+  },
+  {
+    "file": "public/assets/fruits/fruit-24.webp",
+    "source_sha256": "72056783fe0d952916869f9ca00ef23bef9e404429a7a52050b9adc28f448779",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1654343,
+    "bytes": 21280
+  },
+  {
+    "file": "public/assets/fruits/fruit-25.webp",
+    "source_sha256": "aa0e99f654497fa1a90c11d4d671700f457cda7183704e92d4749314c4871fd5",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1490142,
+    "bytes": 17560
+  },
+  {
+    "file": "public/assets/fruits/fruit-26.webp",
+    "source_sha256": "c18dc28b535c3eee3f4a0a0ebd496ab4131ac02324e16dcf8aec4ff3ecc780b1",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1886962,
+    "bytes": 24682
+  },
+  {
+    "file": "public/assets/fruits/fruit-27.webp",
+    "source_sha256": "9d357855cfac403ecaad7e8c786a1388df1878b245b2cd07061e41ae614b4936",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1983533,
+    "bytes": 27360
+  },
+  {
+    "file": "public/assets/fruits/fruit-28.webp",
+    "source_sha256": "72c6b9e59071aff28f2f671a4fa3a7fd26d5dcd7b65be5576e3fd2085f16d59e",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1727065,
+    "bytes": 25838
+  },
+  {
+    "file": "public/assets/fruits/fruit-29.webp",
+    "source_sha256": "d2b77d387c70e20cca42e7bfbcd3b18c6cfc971480653b035ac4b26d284e0837",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1814289,
+    "bytes": 24614
+  },
+  {
+    "file": "public/assets/fruits/fruit-30.webp",
+    "source_sha256": "9bbf07e4f618c3e87605dbbac59cf0717e02aa9ac227a701e63e55bfae8280f7",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "original_bytes": 1708265,
+    "bytes": 22928
+  },
+  {
+    "file": "public/assets/orchard/background.webp",
+    "source_sha256": "6aa9d44253e7ea1bf2f66e0bd04f0be2357963c5e1656619653973108f81fa9b",
+    "original_size": [
+      1536,
+      1024
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "original_bytes": 1937489,
+    "bytes": 149814
+  }
+]

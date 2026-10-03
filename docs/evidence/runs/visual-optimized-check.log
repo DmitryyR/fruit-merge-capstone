@@ -1,0 +1,92 @@
+
+CHECK: typecheck
+
+CHECK: lint
+
+CHECK: unit
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+
+ Test Files  6 passed (6)
+      Tests  68 passed (68)
+   Start at  01:05:11
+   Duration  291ms (transform 69%, import 19%, tests 7%, worker 5%)
+
+
+CHECK: integration
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+
+ Test Files  2 passed (2)
+      Tests  6 passed (6)
+   Start at  01:05:11
+   Duration  253ms (transform 64%, import 25%, tests 6%, worker 5%)
+
+
+CHECK: production build
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 21 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.67 kB │ gzip:   0.46 kB
+dist/assets/index-BcqEyNta.css      7.06 kB │ gzip:   2.36 kB
+dist/assets/index-CckcwE-j.js   1,225.25 kB │ gzip: 338.71 kB
+✓ built in 6.05s
+
+CHECK: test build
+vite v7.3.6 building client environment for e2e...
+transforming...
+✓ 23 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-e2e/index.html                       0.67 kB │ gzip:   0.46 kB
+dist-e2e/assets/index-BcqEyNta.css        7.06 kB │ gzip:   2.36 kB
+dist-e2e/assets/test-api-BHT5q5zN.js      0.59 kB │ gzip:   0.38 kB
+dist-e2e/assets/index-CmrCA5_y.js     1,226.64 kB │ gzip: 339.39 kB
+✓ built in 6.21s
+
+CHECK: browser acceptance + production smoke
+[WebServer] (node:49296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:43016) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 1 worker
+
+(node:48380) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (1.1s)
+  ok  2 [desktop] › tests\e2e\game.spec.ts:8:1 › FR-02/03 real drop and collision award score (3.7s)
+  ok  3 [desktop] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks same-frame gestures without shifting queue (2.1s)
+  ok  4 [desktop] › tests\e2e\game.spec.ts:10:1 › FR-07 pause freezes physics and timer; resume works (2.3s)
+  ok  5 [desktop] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it (5.1s)
+  ok  6 [desktop] › tests\e2e\game.spec.ts:12:1 › FR-08 record survives restart and reload (3.5s)
+  ok  7 [desktop] › tests\e2e\game.spec.ts:13:1 › NFR-03 ten restarts keep one collision listener and one drop (1.8s)
+  ok  8 [desktop] › tests\e2e\game.spec.ts:14:1 › NFR-02 resize uses new canvas geometry (859ms)
+  ok  9 [desktop] › tests\e2e\game.spec.ts:15:1 › NFR-07 hidden tab automatically pauses (916ms)
+  ok 10 [desktop] › tests\e2e\game.spec.ts:16:1 › outside release and secondary pointer do not drop (1.0s)
+  ok 11 [desktop] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank (1.6s)
+(node:50608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 12 [touch] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (817ms)
+  ok 13 [touch] › tests\e2e\game.spec.ts:8:1 › FR-02/03 real drop and collision award score (2.7s)
+  ok 14 [touch] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks same-frame gestures without shifting queue (735ms)
+  ok 15 [touch] › tests\e2e\game.spec.ts:10:1 › FR-07 pause freezes physics and timer; resume works (1.6s)
+  ok 16 [touch] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it (4.9s)
+  ok 17 [touch] › tests\e2e\game.spec.ts:12:1 › FR-08 record survives restart and reload (3.5s)
+  ok 18 [touch] › tests\e2e\game.spec.ts:13:1 › NFR-03 ten restarts keep one collision listener and one drop (1.7s)
+  ok 19 [touch] › tests\e2e\game.spec.ts:14:1 › NFR-02 resize uses new canvas geometry (914ms)
+  ok 20 [touch] › tests\e2e\game.spec.ts:15:1 › NFR-07 hidden tab automatically pauses (733ms)
+  ok 21 [touch] › tests\e2e\game.spec.ts:16:1 › outside release and secondary pointer do not drop (801ms)
+  ok 22 [touch] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank (1.3s)
+(node:37004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 23 [production] › tests\smoke\production.spec.ts:2:1 › production boots without test API (1.1s)
+  ok 24 [production] › tests\smoke\production.spec.ts:3:1 › missing asset produces actionable error (771ms)
+
+  24 passed (49.7s)
+
+CHECK PASSED — types, lint, unit, integration, both builds, browsers, production isolation.

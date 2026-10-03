@@ -1,0 +1,542 @@
+[
+  {
+    "file": "fruit-01.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1610948
+  },
+  {
+    "file": "fruit-02.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1425650
+  },
+  {
+    "file": "fruit-03.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1313599
+  },
+  {
+    "file": "fruit-04.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1660546
+  },
+  {
+    "file": "fruit-05.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1573034
+  },
+  {
+    "file": "fruit-06.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1439316
+  },
+  {
+    "file": "fruit-07.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1482761
+  },
+  {
+    "file": "fruit-08.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1697733
+  },
+  {
+    "file": "fruit-09.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1643426
+  },
+  {
+    "file": "fruit-10.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1908853
+  },
+  {
+    "file": "fruit-11.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "bytes": 1875556
+  },
+  {
+    "file": "fruit-12.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1833774
+  },
+  {
+    "file": "fruit-13.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1703245
+  },
+  {
+    "file": "fruit-14.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 2019421
+  },
+  {
+    "file": "fruit-15.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1437310
+  },
+  {
+    "file": "fruit-16.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "bytes": 1622317
+  },
+  {
+    "file": "fruit-17.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1473946
+  },
+  {
+    "file": "fruit-18.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1656787
+  },
+  {
+    "file": "fruit-19.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1617950
+  },
+  {
+    "file": "fruit-20.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1710844
+  },
+  {
+    "file": "fruit-21.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1945833
+  },
+  {
+    "file": "fruit-22.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1602953
+  },
+  {
+    "file": "fruit-23.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1997331
+  },
+  {
+    "file": "fruit-24.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1654343
+  },
+  {
+    "file": "fruit-25.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1490142
+  },
+  {
+    "file": "fruit-26.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1886962
+  },
+  {
+    "file": "fruit-27.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1983533
+  },
+  {
+    "file": "fruit-28.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1727065
+  },
+  {
+    "file": "fruit-29.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1814289
+  },
+  {
+    "file": "fruit-30.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 1708265
+  }
+]

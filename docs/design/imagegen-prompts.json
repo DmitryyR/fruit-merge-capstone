@@ -1,0 +1,380 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-10-04",
+  "prompts": [
+    {
+      "asset": "orchard",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-7c0d7ddc-b64a-473c-ab5d-b690954fff48.png"
+      ],
+      "transparent_background": false,
+      "prompt": "Create a background-only asset for the referenced Fruit Merge game mockup. Sunny softly blurred apple orchard, pale blue sky, apple branches framing far corners, rustic sunlit wooden tabletop across bottom 22 percent. Match reference lighting, warm green, cream and honey palette, cheerful polished 3D storybook rendering. Wide landscape 1536x1024. Empty calm softly blurred center for UI and tall transparent container. Remove ALL UI, panels, glass container, text, logos, fruits on table, buttons, scores and characters. Background scenery only. Keep middle low-contrast and lightly sun-washed so dark text and game objects remain readable. Not a screenshot: reusable background art with no interface."
+    },
+    {
+      "asset": "fruit-01",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a blueberry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Very important geometry: main fruit body almost circular, centered exactly on canvas center, body diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, only 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference blueberry; not a flat vector icon. This will roll as a circular game piece."
+    },
+    {
+      "asset": "fruit-02",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a cranberry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Very important geometry: main fruit body almost circular, centered exactly on canvas center, body diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, only 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference cranberry; not a flat vector icon. This will roll as a circular game piece."
+    },
+    {
+      "asset": "fruit-03",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a single red cherry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Very important geometry: main fruit body almost circular, centered exactly on canvas center, body diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, only 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference single red cherry; not a flat vector icon. This will roll as a circular game piece."
+    },
+    {
+      "asset": "fruit-04",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a raspberry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Very important geometry: main fruit body almost circular, centered exactly on canvas center, body diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, only 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference raspberry; not a flat vector icon. This will roll as a circular game piece."
+    },
+    {
+      "asset": "fruit-05",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a blackberry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Very important geometry: main fruit body almost circular, centered exactly on canvas center, body diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, only 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference blackberry; not a flat vector icon. This will roll as a circular game piece."
+    },
+    {
+      "asset": "fruit-06",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a green gooseberry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference green gooseberry; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-07",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a single purple grape, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference single purple grape; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-08",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a strawberry, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference strawberry; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-09",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a lychee with red rind and visible white flesh, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference lychee with red rind and visible white flesh; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-10",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-fbec091a-d5c4-410e-8a9d-7a49af46bc9d.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a fig cut open with red seeded interior, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference fig cut open with red seeded interior; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-11",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a purple plum, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference purple plum; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-12",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a apricot, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference apricot; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-13",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a mandarin orange, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference mandarin orange; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-14",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a kiwi half showing bright green flesh, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference kiwi half showing bright green flesh; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-15",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a yellow lemon, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference yellow lemon; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-16",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a green lime, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference green lime; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-17",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a yellow pear, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference yellow pear; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-18",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a avocado half with brown pit, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference avocado half with brown pit; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-19",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a red apple, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference red apple; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-20",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-73549488-2cc2-4cf0-93c8-d5b98509044c.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a orange, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference orange; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-21",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a peach, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference peach; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-22",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a persimmon, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference persimmon; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-23",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a passion fruit half with golden seeds, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference passion fruit half with golden seeds; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-24",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a pomegranate, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference pomegranate; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-25",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a mango, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference mango; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-26",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a dragon fruit half white flesh black seeds, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference dragon fruit half white flesh black seeds; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-27",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a coconut half white flesh, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference coconut half white flesh; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-28",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a pineapple, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference pineapple; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-29",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a cantaloupe melon, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference cantaloupe melon; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    },
+    {
+      "asset": "fruit-30",
+      "referenced_image_paths": [
+        "C:\\Users\\DmitryR\\AppData\\Local\\Temp\\codex-clipboard-1eeef0a0-ecf5-4d57-b4d5-ca6e0f625f33.png"
+      ],
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE separate game sprite of a green striped watermelon, matching this fruit catalog reference: glossy detailed colorful 3D kawaii fruit, dark shiny round eyes, pink cheeks, small happy open smile, tiny leaf as appropriate. Transparent background, genuine alpha, no ground or cast shadow, no text, no labels, no frame, no other fruit. Square canvas. Main fruit body approximately circular and centered, diameter 88% of canvas width; leaves and stem kept short inside canvas, never clipped, 3% clear margin outside total silhouette. Straight-on view, face forward, top-left warm soft light, rich surface detail but readable at 24px. One isolated fruit only. Faithful to reference green striped watermelon; not a flat vector icon. This will roll as a circular game piece. Compact sprite, choose smallest square output resolution available."
+    }
+  ],
+  "outputs": [
+    {
+      "key": "orchard",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-7b834a8c-9808-49fd-b2a0-53970a92f07d.png"
+    },
+    {
+      "key": "fruit-01",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-cb784fc5-41a4-4868-97da-69fc72ad0eac.png"
+    },
+    {
+      "key": "fruit-02",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-8960c528-bcfe-4006-bf2f-936319aa55f4.png"
+    },
+    {
+      "key": "fruit-03",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-30e50e09-6408-4ab8-97c2-49f141ce81bb.png"
+    },
+    {
+      "key": "fruit-04",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-fd4e7916-f0d2-4840-bad8-9ca076812e5d.png"
+    },
+    {
+      "key": "fruit-05",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-fbede122-6843-4179-9240-e9186e72eed6.png"
+    },
+    {
+      "key": "fruit-06",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-128c49dc-ba82-4ec6-9cf8-904cb64cefc5.png"
+    },
+    {
+      "key": "fruit-07",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-c81e568b-cf5e-49a0-b4b8-ece4ef58b80f.png"
+    },
+    {
+      "key": "fruit-08",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-baee6398-d189-46e8-915b-bf0ee42ddaa6.png"
+    },
+    {
+      "key": "fruit-09",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-595b13e8-8be9-41a2-859e-ce5b7e0a23cd.png"
+    },
+    {
+      "key": "fruit-10",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-45d5cdb7-96f7-4969-91b7-4e702eec14a3.png"
+    },
+    {
+      "key": "fruit-11",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-d77ffe05-1a08-4241-96ab-8585b38f5a9c.png"
+    },
+    {
+      "key": "fruit-12",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-70b65a9b-12f6-41f4-b8be-f546ef0f12cc.png"
+    },
+    {
+      "key": "fruit-13",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-dfcfc53c-d6f9-4e51-bb5b-f8e079d388fe.png"
+    },
+    {
+      "key": "fruit-14",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-e881c489-a296-4480-b284-d02ff277a8d4.png"
+    },
+    {
+      "key": "fruit-15",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-ab48fb72-aa1f-4638-840a-77b0b8e79639.png"
+    },
+    {
+      "key": "fruit-16",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-168a5afb-8dcc-43c5-bf19-35f5d2cc077e.png"
+    },
+    {
+      "key": "fruit-17",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-c8114b13-ff71-4b7c-8b5b-1eb5d53569d0.png"
+    },
+    {
+      "key": "fruit-18",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-39c5d660-eedf-423f-a513-ef74246463db.png"
+    },
+    {
+      "key": "fruit-19",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-534505a7-84f4-4757-8dd0-3ba26e7f85ae.png"
+    },
+    {
+      "key": "fruit-20",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-f310253a-df82-4f15-995f-77be701804a9.png"
+    },
+    {
+      "key": "fruit-21",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-583fb5cb-873c-4927-945b-daa123289f56.png"
+    },
+    {
+      "key": "fruit-22",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-af377981-878b-42ca-b2f0-3bd376dfaa7c.png"
+    },
+    {
+      "key": "fruit-23",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-3f2041a3-16fe-4139-b888-16b9c9f522a5.png"
+    },
+    {
+      "key": "fruit-24",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-86a1f981-c38b-45ba-9f9b-e3e21b5d5c78.png"
+    },
+    {
+      "key": "fruit-25",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-527ba478-585d-4784-b7bb-17ce3d7881e8.png"
+    },
+    {
+      "key": "fruit-26",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-2e1f90fa-2b63-442a-b263-b52332ee0104.png"
+    },
+    {
+      "key": "fruit-27",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-3a80eba0-9938-4e4b-8806-cb856db2b4e8.png"
+    },
+    {
+      "key": "fruit-28",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-9e5d2b10-4e66-41fd-b567-3edd29fd18c6.png"
+    },
+    {
+      "key": "fruit-29",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-b995d3e1-b2c7-4c2b-ab11-18d3a5026b3d.png"
+    },
+    {
+      "key": "fruit-30",
+      "path": "C:\\Users\\DmitryR\\.codex\\generated_images\\01a10370-31eb-7b92-9048-5e5a05f678b8\\exec-22bb63f3-b337-41ce-b1d0-2326f3e1c252.png"
+    }
+  ]
+}

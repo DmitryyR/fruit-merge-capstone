@@ -1,0 +1,512 @@
+[
+  {
+    "file": "fruit-01.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-02.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-03.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-04.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-05.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-06.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-07.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-08.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-09.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-10.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-11.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-12.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-13.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-14.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-15.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-16.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-17.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-18.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-19.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-20.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-21.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-22.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-23.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-24.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-25.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-26.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-27.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-28.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-29.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "file": "fruit-30.webp",
+    "size": [
+      256,
+      256
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]
