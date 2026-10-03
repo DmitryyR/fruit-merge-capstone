@@ -1,0 +1,52 @@
+[WebServer] (node:24156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:38320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:40980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [desktop] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (6.3s)
+
+
+  1) [desktop] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures ─────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('canvas')
+    Expected: visible
+    Timeout: 6000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('canvas') with timeout 6000ms
+      - waiting for locator('canvas')
+
+
+      1 | import {test,expect,type Page} from '@playwright/test';
+      2 | type Seed={rank:number;x:number;y:number;static?:boolean};
+    > 3 | async function ready(page:Page){await page.goto('/');await expect(page.locator('canvas')).toBeVisible();await page.waitForFunction(()=>!!window.__FRUIT_MERGE_TEST__);}
+        |                                                                                           ^
+      4 | async function seed(page:Page,fruits:Seed[]=[],currentRank=1){await page.evaluate(({fruits,currentRank})=>window.__FRUIT_MERGE_TEST__!.load(fruits,currentRank),{fruits,currentRank});}
+      5 | async function snap(page:Page){return page.evaluate(()=>window.__FRUIT_MERGE_TEST__!.snapshot());}
+      6 | async function drop(page:Page,touch:boolean,x=240){const r=await page.locator('canvas').boundingBox();if(!r)throw new Error('canvas missing');const px=r.x+r.width*x/480,py=r.y+r.height*0.4;if(touch)await page.touchscreen.tap(px,py);else await page.mouse.click(px,py);}
+        at ready (C:\Users\DmitryR\Documents\Сайт продажів\fruit-merge-capstone\tests\e2e\game.spec.ts:3:91)
+        at C:\Users\DmitryR\Documents\Сайт продажів\fruit-merge-capstone\tests\e2e\game.spec.ts:7:57
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\game-FR-01-ready-with-all-30-textures-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\game-FR-01-ready-with-all-30-textures-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\game-FR-01-ready-with-all-30-textures-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\game-FR-01-ready-with-all-30-textures-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures ──────────────────────

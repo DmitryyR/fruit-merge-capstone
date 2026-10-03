@@ -1,0 +1,9 @@
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+
+ Test Files  7 passed (7)
+      Tests  72 passed (72)
+   Start at  23:51:39
+   Duration  1.80s (transform 79%, import 13%, worker 4%, tests 3%)
+

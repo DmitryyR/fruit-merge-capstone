@@ -1,0 +1,228 @@
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+ ❯ tests/unit/session.test.ts (3 tests | 3 failed) 7ms
+   × FR-05 RNG bounds and queue shift 4ms
+   × paused and gameOver cannot consume queue; terminal mode cannot resume 1ms
+   × restart clears score and retains best 1ms
+ ❯ tests/unit/high-score.test.ts (8 tests | 8 failed) 8ms
+   × invalid storage null 4ms
+   × invalid storage oops 1ms
+   × invalid storage -1 1ms
+   × invalid storage NaN 1ms
+   × invalid storage 1e999 0ms
+   × invalid storage 1.2 0ms
+   × invalid storage {} 0ms
+   × larger best only; throwing read and write are contained 0ms
+ ❯ tests/unit/drop-controller.test.ts (2 tests | 2 failed) 8ms
+   × FR-02/NFR-02 scaled offset input and walls 6ms
+   × one primary gesture; outside release cancels; reset forgets gesture 1ms
+ ❯ tests/unit/danger.test.ts (9 tests | 6 failed) 9ms
+   × FR-06 1999 versus 2000 continuous milliseconds 3ms
+   × grace crossing only counts eligible fraction 0ms
+   × condition break resets existing timer {"topY":140} 1ms
+   × condition break resets existing timer {"speedPxPerSecond":25} 0ms
+   × condition break resets existing timer {"topY":200} 0ms
+   × pause freezes, removal clears, resume continues 0ms
+ ❯ tests/integration/merge-coordinator.test.ts (4 tests | 4 failed) 9ms
+   × NFR-01 duplicate, reversed, shared and self collision 5ms
+   × chain awards 30 total; terminal and unequal never merge 1ms
+   × failure releases reservation without points 1ms
+   × pause/reset clears queued old work 1ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 23 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/merge-coordinator.test.ts > NFR-01 duplicate, reversed, shared and self collision
+Error: Not implemented
+ ❯ MergeCoordinator.tryMerge src/game/services/merge-coordinator.ts:5:47
+      3| export class MergeCoordinator {
+      4|  constructor(_world:MergeWorld) {}
+      5|  tryMerge(_a:string,_b:string):boolean {throw new Error('Not implement…
+       |                                               ^
+      6|  flushMerges():void {throw new Error('Not implemented');}
+      7|  reset():void {throw new Error('Not implemented');}
+ ❯ tests/integration/merge-coordinator.test.ts:9:104
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/23]⎯
+
+ FAIL  tests/integration/merge-coordinator.test.ts > chain awards 30 total; terminal and unequal never merge
+Error: Not implemented
+ ❯ MergeCoordinator.tryMerge src/game/services/merge-coordinator.ts:5:47
+      3| export class MergeCoordinator {
+      4|  constructor(_world:MergeWorld) {}
+      5|  tryMerge(_a:string,_b:string):boolean {throw new Error('Not implement…
+       |                                               ^
+      6|  flushMerges():void {throw new Error('Not implemented');}
+      7|  reset():void {throw new Error('Not implemented');}
+ ❯ tests/integration/merge-coordinator.test.ts:10:99
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/23]⎯
+
+ FAIL  tests/integration/merge-coordinator.test.ts > failure releases reservation without points
+Error: Not implemented
+ ❯ MergeCoordinator.tryMerge src/game/services/merge-coordinator.ts:5:47
+      3| export class MergeCoordinator {
+      4|  constructor(_world:MergeWorld) {}
+      5|  tryMerge(_a:string,_b:string):boolean {throw new Error('Not implement…
+       |                                               ^
+      6|  flushMerges():void {throw new Error('Not implemented');}
+      7|  reset():void {throw new Error('Not implemented');}
+ ❯ tests/integration/merge-coordinator.test.ts:11:96
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/23]⎯
+
+ FAIL  tests/integration/merge-coordinator.test.ts > pause/reset clears queued old work
+Error: Not implemented
+ ❯ MergeCoordinator.tryMerge src/game/services/merge-coordinator.ts:5:47
+      3| export class MergeCoordinator {
+      4|  constructor(_world:MergeWorld) {}
+      5|  tryMerge(_a:string,_b:string):boolean {throw new Error('Not implement…
+       |                                               ^
+      6|  flushMerges():void {throw new Error('Not implemented');}
+      7|  reset():void {throw new Error('Not implemented');}
+ ❯ tests/integration/merge-coordinator.test.ts:12:78
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/23]⎯
+
+ FAIL  tests/unit/danger.test.ts > FR-06 1999 versus 2000 continuous milliseconds
+Error: Not implemented
+ ❯ advanceDanger src/game/domain/danger.ts:2:125
+      1| import type {DangerState,FruitSample,GameMode} from '../types';
+      2| export function advanceDanger(_previous:DangerState,_samples:FruitSamp…
+       |                                                                                                                             ^
+      3|
+ ❯ tests/unit/danger.test.ts:4:68
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/23]⎯
+
+ FAIL  tests/unit/danger.test.ts > grace crossing only counts eligible fraction
+Error: Not implemented
+ ❯ advanceDanger src/game/domain/danger.ts:2:125
+      1| import type {DangerState,FruitSample,GameMode} from '../types';
+      2| export function advanceDanger(_previous:DangerState,_samples:FruitSamp…
+       |                                                                                                                             ^
+      3|
+ ❯ tests/unit/danger.test.ts:5:65
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/23]⎯
+
+ FAIL  tests/unit/danger.test.ts > condition break resets existing timer {"topY":140}
+ FAIL  tests/unit/danger.test.ts > condition break resets existing timer {"speedPxPerSecond":25}
+ FAIL  tests/unit/danger.test.ts > condition break resets existing timer {"topY":200}
+Error: Not implemented
+ ❯ advanceDanger src/game/domain/danger.ts:2:125
+      1| import type {DangerState,FruitSample,GameMode} from '../types';
+      2| export function advanceDanger(_previous:DangerState,_samples:FruitSamp…
+       |                                                                                                                             ^
+      3|
+ ❯ tests/unit/danger.test.ts:6:171
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/23]⎯
+
+ FAIL  tests/unit/danger.test.ts > pause freezes, removal clears, resume continues
+Error: Not implemented
+ ❯ advanceDanger src/game/domain/danger.ts:2:125
+      1| import type {DangerState,FruitSample,GameMode} from '../types';
+      2| export function advanceDanger(_previous:DangerState,_samples:FruitSamp…
+       |                                                                                                                             ^
+      3|
+ ❯ tests/unit/danger.test.ts:7:69
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/23]⎯
+
+ FAIL  tests/unit/drop-controller.test.ts > FR-02/NFR-02 scaled offset input and walls
+Error: Not implemented
+ ❯ clientToWorldX src/game/input/drop-controller.ts:1:98
+      1| export function clientToWorldX(_x:number,_left:number,_width:number,_w…
+       |                                                                                                  ^
+      2| export function clampDropX(_x:number,_radius:number):number {throw new…
+      3| export class DropController {
+ ❯ tests/unit/drop-controller.test.ts:3:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/23]⎯
+
+ FAIL  tests/unit/drop-controller.test.ts > one primary gesture; outside release cancels; reset forgets gesture
+Error: Not implemented
+ ❯ DropController.begin src/game/input/drop-controller.ts:4:45
+      2| export function clampDropX(_x:number,_radius:number):number {throw new…
+      3| export class DropController {
+      4|   begin(_id:number,_primary:boolean) {throw new Error('Not implemented…
+       |                                             ^
+      5|   end(_id:number,_x:number,_y:number,_rect:{left:number;top:number;wid…
+      6|   reset() {throw new Error('Not implemented');}
+ ❯ tests/unit/drop-controller.test.ts:4:164
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/23]⎯
+
+ FAIL  tests/unit/high-score.test.ts > invalid storage null
+ FAIL  tests/unit/high-score.test.ts > invalid storage oops
+ FAIL  tests/unit/high-score.test.ts > invalid storage -1
+ FAIL  tests/unit/high-score.test.ts > invalid storage NaN
+ FAIL  tests/unit/high-score.test.ts > invalid storage 1e999
+ FAIL  tests/unit/high-score.test.ts > invalid storage 1.2
+ FAIL  tests/unit/high-score.test.ts > invalid storage {}
+Error: Not implemented
+ ❯ readBest src/game/services/high-score.ts:2:62
+      1| export type StoragePort={getItem(key:string):string|null;setItem(key:s…
+      2| export function readBest(_storage:StoragePort):number {throw new Error…
+       |                                                              ^
+      3| export function writeBest(_storage:StoragePort,_best:number):boolean {…
+      4|
+ ❯ tests/unit/high-score.test.ts:3:89
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/23]⎯
+
+ FAIL  tests/unit/high-score.test.ts > larger best only; throwing read and write are contained
+Error: Not implemented
+ ❯ readBest src/game/services/high-score.ts:2:62
+      1| export type StoragePort={getItem(key:string):string|null;setItem(key:s…
+      2| export function readBest(_storage:StoragePort):number {throw new Error…
+       |                                                              ^
+      3| export function writeBest(_storage:StoragePort,_best:number):boolean {…
+      4|
+ ❯ tests/unit/high-score.test.ts:4:169
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/23]⎯
+
+ FAIL  tests/unit/session.test.ts > FR-05 RNG bounds and queue shift
+Error: Not implemented
+ ❯ createSession src/game/domain/session.ts:2:78
+      1| import type {GameState} from '../types';
+      2| export function createSession(_rng:()=>number,_best:number):GameState …
+       |                                                                              ^
+      3| export function advanceQueue(_s:GameState,_rng:()=>number):GameState {…
+      4| export function pause(_s:GameState):GameState {throw new Error('Not im…
+ ❯ tests/unit/session.test.ts:3:53
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/23]⎯
+
+ FAIL  tests/unit/session.test.ts > paused and gameOver cannot consume queue; terminal mode cannot resume
+Error: Not implemented
+ ❯ createSession src/game/domain/session.ts:2:78
+      1| import type {GameState} from '../types';
+      2| export function createSession(_rng:()=>number,_best:number):GameState …
+       |                                                                              ^
+      3| export function advanceQueue(_s:GameState,_rng:()=>number):GameState {…
+      4| export function pause(_s:GameState):GameState {throw new Error('Not im…
+ ❯ tests/unit/session.test.ts:4:91
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/23]⎯
+
+ FAIL  tests/unit/session.test.ts > restart clears score and retains best
+Error: Not implemented
+ ❯ createSession src/game/domain/session.ts:2:78
+      1| import type {GameState} from '../types';
+      2| export function createSession(_rng:()=>number,_best:number):GameState …
+       |                                                                              ^
+      3| export function advanceQueue(_s:GameState,_rng:()=>number):GameState {…
+      4| export function pause(_s:GameState):GameState {throw new Error('Not im…
+ ❯ tests/unit/session.test.ts:5:69
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/23]⎯
+
+
+ Test Files  5 failed | 2 passed (7)
+      Tests  23 failed | 49 passed (72)
+   Start at  23:49:50
+   Duration  812ms (transform 47%, worker 24%, import 22%, tests 7%)
+
