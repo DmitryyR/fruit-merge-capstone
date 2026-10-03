@@ -1,6 +1,11 @@
 // Original vector illustrations, created for this project. No external imagery.
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 const fruits=JSON.parse(readFileSync('src/game/catalog/fruits.json','utf8'));
+// This historical generator must never write SVG bytes into current raster assets.
+if(fruits.some(f=>!f.texture.endsWith('.svg'))){
+ console.error('This legacy SVG generator requires an SVG catalog. Current raster artwork was not changed.');
+ process.exit(1);
+}
 const colors=['#ca4050','#e85e62','#c94f6a','#a7bd62','#f4ae58','#8a639f','#edd35c','#a7c76a','#f0a34e','#efa180','#d96156','#b9bd62','#ec9943','#a28459','#e68542','#c6544e','#a07199','#f1be58','#90a455','#efa867','#a8835f','#e782a8','#d7b961','#e4c27c','#cad49b','#76ac75','#a9c579','#9977ad','#b9bd55','#ddb95a'];
 mkdirSync('public/assets/fruits',{recursive:true});
 let register='# Реєстр ресурсів\n\n30 оригінальних SVG, створених агентом для цього проєкту 03.10.2026. Зовнішні зображення, шрифти й торгові марки не використані. Генератор збережено в scripts/create-assets.mjs; ресурси поширюються за MIT разом із кодом.\n\n| ID | Назва | Файл | Походження |\n|---|---|---|---|\n';
