@@ -1,0 +1,126 @@
+[WebServer] (node:4248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:41844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 22 tests using 1 worker
+
+(node:22960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (1.2s)
+  ok  2 [desktop] › tests\e2e\game.spec.ts:8:1 › FR-02/03 real drop and collision award score (4.6s)
+  x   3 [desktop] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks repeated gesture without shifting queue (9.1s)
+(node:42548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [desktop] › tests\e2e\game.spec.ts:10:1 › FR-07 pause freezes physics and timer; resume works (3.6s)
+  x   5 [desktop] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it (35.2s)
+(node:45012) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [desktop] › tests\e2e\game.spec.ts:12:1 › FR-08 record survives restart and reload (6.9s)
+  ok  7 [desktop] › tests\e2e\game.spec.ts:13:1 › NFR-03 ten restarts keep one collision listener and one drop (8.3s)
+  ok  8 [desktop] › tests\e2e\game.spec.ts:14:1 › NFR-02 resize uses new canvas geometry (2.6s)
+  ok  9 [desktop] › tests\e2e\game.spec.ts:15:1 › NFR-07 hidden tab automatically pauses (3.6s)
+  ok 10 [desktop] › tests\e2e\game.spec.ts:16:1 › outside release and secondary pointer do not drop (2.3s)
+(node:42580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [touch] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (878ms)
+  ok 12 [touch] › tests\e2e\game.spec.ts:8:1 › FR-02/03 real drop and collision award score (3.2s)
+  x  13 [touch] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks repeated gesture without shifting queue (7.5s)
+(node:23924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 14 [touch] › tests\e2e\game.spec.ts:10:1 › FR-07 pause freezes physics and timer; resume works (2.0s)
+  ok 15 [touch] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it (10.0s)
+  ok 16 [touch] › tests\e2e\game.spec.ts:12:1 › FR-08 record survives restart and reload (9.1s)
+  ok 17 [touch] › tests\e2e\game.spec.ts:13:1 › NFR-03 ten restarts keep one collision listener and one drop (6.8s)
+  ok 18 [touch] › tests\e2e\game.spec.ts:14:1 › NFR-02 resize uses new canvas geometry (3.3s)
+  ok 19 [touch] › tests\e2e\game.spec.ts:15:1 › NFR-07 hidden tab automatically pauses (1.3s)
+  ok 20 [touch] › tests\e2e\game.spec.ts:16:1 › outside release and secondary pointer do not drop (1.9s)
+(node:44740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 21 [production] › tests\smoke\production.spec.ts:2:1 › production boots without test API (1.0s)
+  ok 22 [production] › tests\smoke\production.spec.ts:3:1 › missing asset produces actionable error (636ms)
+
+
+  1) [desktop] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks repeated gesture without shifting queue 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+       7 | test('FR-01 ready with all 30 textures',async({page})=>{await ready(page);expect((await snap(page)).textures).toBe(30);await expect(page.getByRole('heading',{name:'Фруктовий сад',exact:true})).toBeVisible();});
+       8 | test('FR-02/03 real drop and collision award score',async({page,isMobile})=>{await ready(page);await seed(page,[{rank:1,x:240,y:650}]);await drop(page,isMobile);await expect.poll(async()=>(await snap(page)).state.score).toBe(10);expect((await snap(page)).fruits.map(f=>f.rank)).toEqual([2]);});
+    >  9 | test('FR-05 cooldown blocks repeated gesture without shifting queue',async({page,isMobile})=>{await ready(page);await seed(page);await drop(page,isMobile,50);const first=await snap(page);await drop(page,isMobile,400);const second=await snap(page);expect(second.fruits.length).toBe(1);expect(second.state.currentRank).toBe(first.state.currentRank);});
+         |                                                                                                                                                                                                                                                                                     ^
+      10 | test('FR-07 pause freezes physics and timer; resume works',async({page,isMobile})=>{await ready(page);await seed(page);await drop(page,isMobile);await page.getByRole('button',{name:'Пауза',exact:true}).click();const a=await snap(page);await page.waitForTimeout(400);const b=await snap(page);expect(b.fruits).toEqual(a.fruits);expect(b.simTime).toBe(a.simTime);await drop(page,isMobile);expect((await snap(page)).fruits.length).toBe(1);await page.getByRole('button',{name:'Продовжити',exact:true}).click();await expect.poll(async()=>(await snap(page)).simTime).toBeGreaterThan(a.simTime);});
+      11 | test('FR-06 danger ends session, restart unlocks it',async({page,isMobile})=>{await ready(page);await seed(page,[{rank:1,x:240,y:120,static:true}]);await expect.poll(async()=>(await snap(page)).state.mode,{timeout:8000}).toBe('gameOver');await drop(page,isMobile);expect((await snap(page)).fruits.length).toBe(1);await page.getByRole('button',{name:'Нова гра',exact:true}).click();expect((await snap(page)).state.mode).toBe('playing');expect((await snap(page)).fruits).toHaveLength(0);});
+      12 | test('FR-08 record survives restart and reload',async({page,isMobile})=>{await ready(page);await seed(page,[{rank:1,x:240,y:650}]);await drop(page,isMobile);await expect.poll(async()=>(await snap(page)).state.bestScore).toBe(10);await page.getByRole('button',{name:'Нова гра',exact:true}).click();expect((await snap(page)).state.bestScore).toBe(10);await page.reload();await page.waitForFunction(()=>!!window.__FRUIT_MERGE_TEST__);expect((await snap(page)).state.bestScore).toBe(10);});
+        at C:\Users\DmitryR\Documents\Сайт продажів\fruit-merge-capstone\tests\e2e\game.spec.ts:9:277
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it ───────
+
+    Test timeout of 20000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\game-FR-06-danger-ends-session-restart-unlocks-it-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\game-FR-06-danger-ends-session-restart-unlocks-it-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\game-FR-06-danger-ends-session-restart-unlocks-it-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\game-FR-06-danger-ends-session-restart-unlocks-it-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [touch] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks repeated gesture without shifting queue 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+       7 | test('FR-01 ready with all 30 textures',async({page})=>{await ready(page);expect((await snap(page)).textures).toBe(30);await expect(page.getByRole('heading',{name:'Фруктовий сад',exact:true})).toBeVisible();});
+       8 | test('FR-02/03 real drop and collision award score',async({page,isMobile})=>{await ready(page);await seed(page,[{rank:1,x:240,y:650}]);await drop(page,isMobile);await expect.poll(async()=>(await snap(page)).state.score).toBe(10);expect((await snap(page)).fruits.map(f=>f.rank)).toEqual([2]);});
+    >  9 | test('FR-05 cooldown blocks repeated gesture without shifting queue',async({page,isMobile})=>{await ready(page);await seed(page);await drop(page,isMobile,50);const first=await snap(page);await drop(page,isMobile,400);const second=await snap(page);expect(second.fruits.length).toBe(1);expect(second.state.currentRank).toBe(first.state.currentRank);});
+         |                                                                                                                                                                                                                                                                                     ^
+      10 | test('FR-07 pause freezes physics and timer; resume works',async({page,isMobile})=>{await ready(page);await seed(page);await drop(page,isMobile);await page.getByRole('button',{name:'Пауза',exact:true}).click();const a=await snap(page);await page.waitForTimeout(400);const b=await snap(page);expect(b.fruits).toEqual(a.fruits);expect(b.simTime).toBe(a.simTime);await drop(page,isMobile);expect((await snap(page)).fruits.length).toBe(1);await page.getByRole('button',{name:'Продовжити',exact:true}).click();await expect.poll(async()=>(await snap(page)).simTime).toBeGreaterThan(a.simTime);});
+      11 | test('FR-06 danger ends session, restart unlocks it',async({page,isMobile})=>{await ready(page);await seed(page,[{rank:1,x:240,y:120,static:true}]);await expect.poll(async()=>(await snap(page)).state.mode,{timeout:8000}).toBe('gameOver');await drop(page,isMobile);expect((await snap(page)).fruits.length).toBe(1);await page.getByRole('button',{name:'Нова гра',exact:true}).click();expect((await snap(page)).state.mode).toBe('playing');expect((await snap(page)).fruits).toHaveLength(0);});
+      12 | test('FR-08 record survives restart and reload',async({page,isMobile})=>{await ready(page);await seed(page,[{rank:1,x:240,y:650}]);await drop(page,isMobile);await expect.poll(async()=>(await snap(page)).state.bestScore).toBe(10);await page.getByRole('button',{name:'Нова гра',exact:true}).click();expect((await snap(page)).state.bestScore).toBe(10);await page.reload();await page.waitForFunction(()=>!!window.__FRUIT_MERGE_TEST__);expect((await snap(page)).state.bestScore).toBe(10);});
+        at C:\Users\DmitryR\Documents\Сайт продажів\fruit-merge-capstone\tests\e2e\game.spec.ts:9:277
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-touch\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-touch\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-touch\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\game-FR-05-cooldown-blocks-ffafe-ture-without-shifting-queue-touch\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [desktop] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks repeated gesture without shifting queue 
+    [desktop] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it ────────
+    [touch] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks repeated gesture without shifting queue 
+  19 passed (2.2m)
