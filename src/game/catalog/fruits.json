@@ -4,210 +4,359 @@
     "rank": 1,
     "name": "Чорниця",
     "texture": "assets/fruits/fruit-01.webp",
-    "radius": 12.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.0,
+      "cy": 157.5,
+      "diameter": 208
+    }
   },
   {
     "id": "fruit-02",
     "rank": 2,
     "name": "Журавлина",
     "texture": "assets/fruits/fruit-02.webp",
-    "radius": 13.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 139.5,
+      "diameter": 205
+    }
   },
   {
     "id": "fruit-03",
     "rank": 3,
     "name": "Вишня",
     "texture": "assets/fruits/fruit-03.webp",
-    "radius": 15.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 125.0,
+      "cy": 155.5,
+      "diameter": 202
+    }
   },
   {
     "id": "fruit-04",
     "rank": 4,
     "name": "Малина",
     "texture": "assets/fruits/fruit-04.webp",
-    "radius": 16.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.0,
+      "cy": 151.0,
+      "diameter": 214
+    }
   },
   {
     "id": "fruit-05",
     "rank": 5,
     "name": "Ожина",
     "texture": "assets/fruits/fruit-05.webp",
-    "radius": 18.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 153.0,
+      "diameter": 213
+    }
   },
   {
     "id": "fruit-06",
     "rank": 6,
     "name": "Аґрус",
     "texture": "assets/fruits/fruit-06.webp",
-    "radius": 19.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 127.0,
+      "cy": 141.0,
+      "diameter": 202
+    }
   },
   {
     "id": "fruit-07",
     "rank": 7,
     "name": "Виноград",
     "texture": "assets/fruits/fruit-07.webp",
-    "radius": 21.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 126.5,
+      "cy": 148.0,
+      "diameter": 197
+    }
   },
   {
     "id": "fruit-08",
     "rank": 8,
     "name": "Полуниця",
     "texture": "assets/fruits/fruit-08.webp",
-    "radius": 22.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 129.5,
+      "cy": 156.0,
+      "diameter": 223
+    }
   },
   {
     "id": "fruit-09",
     "rank": 9,
     "name": "Лічі",
     "texture": "assets/fruits/fruit-09.webp",
-    "radius": 24.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 129.5,
+      "cy": 145.5,
+      "diameter": 215
+    }
   },
   {
     "id": "fruit-10",
     "rank": 10,
     "name": "Інжир",
     "texture": "assets/fruits/fruit-10.webp",
-    "radius": 25.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 129.0,
+      "cy": 145.0,
+      "diameter": 218
+    }
   },
   {
     "id": "fruit-11",
     "rank": 11,
     "name": "Слива",
     "texture": "assets/fruits/fruit-11.webp",
-    "radius": 27.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 126.5,
+      "cy": 143.5,
+      "diameter": 215
+    }
   },
   {
     "id": "fruit-12",
     "rank": 12,
     "name": "Абрикос",
     "texture": "assets/fruits/fruit-12.webp",
-    "radius": 28.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 127.5,
+      "cy": 144.0,
+      "diameter": 213
+    }
   },
   {
     "id": "fruit-13",
     "rank": 13,
     "name": "Мандарин",
     "texture": "assets/fruits/fruit-13.webp",
-    "radius": 30.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 129.5,
+      "cy": 142.5,
+      "diameter": 223
+    }
   },
   {
     "id": "fruit-14",
     "rank": 14,
     "name": "Ківі",
     "texture": "assets/fruits/fruit-14.webp",
-    "radius": 31.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.0,
+      "cy": 127.0,
+      "diameter": 226
+    }
   },
   {
     "id": "fruit-15",
     "rank": 15,
     "name": "Лимон",
     "texture": "assets/fruits/fruit-15.webp",
-    "radius": 33.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 129.0,
+      "cy": 143.5,
+      "diameter": 230
+    }
   },
   {
     "id": "fruit-16",
     "rank": 16,
     "name": "Лайм",
     "texture": "assets/fruits/fruit-16.webp",
-    "radius": 34.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.0,
+      "cy": 145.0,
+      "diameter": 204
+    }
   },
   {
     "id": "fruit-17",
     "rank": 17,
     "name": "Груша",
     "texture": "assets/fruits/fruit-17.webp",
-    "radius": 36.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.0,
+      "cy": 147.0,
+      "diameter": 204
+    }
   },
   {
     "id": "fruit-18",
     "rank": 18,
     "name": "Авокадо",
     "texture": "assets/fruits/fruit-18.webp",
-    "radius": 37.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 135.5,
+      "diameter": 227
+    }
   },
   {
     "id": "fruit-19",
     "rank": 19,
     "name": "Яблуко",
     "texture": "assets/fruits/fruit-19.webp",
-    "radius": 39.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 126.0,
+      "cy": 144.5,
+      "diameter": 216
+    }
   },
   {
     "id": "fruit-20",
     "rank": 20,
     "name": "Апельсин",
     "texture": "assets/fruits/fruit-20.webp",
-    "radius": 40.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 127.0,
+      "cy": 143.5,
+      "diameter": 218
+    }
   },
   {
     "id": "fruit-21",
     "rank": 21,
     "name": "Персик",
     "texture": "assets/fruits/fruit-21.webp",
-    "radius": 42.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.0,
+      "cy": 147.5,
+      "diameter": 228
+    }
   },
   {
     "id": "fruit-22",
     "rank": 22,
     "name": "Хурма",
     "texture": "assets/fruits/fruit-22.webp",
-    "radius": 43.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 151.0,
+      "diameter": 235
+    }
   },
   {
     "id": "fruit-23",
     "rank": 23,
     "name": "Маракуя",
     "texture": "assets/fruits/fruit-23.webp",
-    "radius": 45.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 138.5,
+      "diameter": 225
+    }
   },
   {
     "id": "fruit-24",
     "rank": 24,
     "name": "Гранат",
     "texture": "assets/fruits/fruit-24.webp",
-    "radius": 46.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 153.0,
+      "diameter": 213
+    }
   },
   {
     "id": "fruit-25",
     "rank": 25,
     "name": "Манго",
     "texture": "assets/fruits/fruit-25.webp",
-    "radius": 48.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 131.5,
+      "cy": 140.0,
+      "diameter": 215
+    }
   },
   {
     "id": "fruit-26",
     "rank": 26,
     "name": "Пітахая",
     "texture": "assets/fruits/fruit-26.webp",
-    "radius": 49.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 126.0,
+      "cy": 141.5,
+      "diameter": 226
+    }
   },
   {
     "id": "fruit-27",
     "rank": 27,
     "name": "Кокос",
     "texture": "assets/fruits/fruit-27.webp",
-    "radius": 51.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 134.0,
+      "diameter": 231
+    }
   },
   {
     "id": "fruit-28",
     "rank": 28,
     "name": "Ананас",
     "texture": "assets/fruits/fruit-28.webp",
-    "radius": 52.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 128.5,
+      "cy": 163.5,
+      "diameter": 193
+    }
   },
   {
     "id": "fruit-29",
     "rank": 29,
     "name": "Диня",
     "texture": "assets/fruits/fruit-29.webp",
-    "radius": 54.0
+    "body": {
+      "sourceSize": 256,
+      "cx": 129.5,
+      "cy": 140.0,
+      "diameter": 221
+    }
   },
   {
     "id": "fruit-30",
     "rank": 30,
     "name": "Кавун",
     "texture": "assets/fruits/fruit-30.webp",
-    "radius": 55.5
+    "body": {
+      "sourceSize": 256,
+      "cx": 132.0,
+      "cy": 143.0,
+      "diameter": 214
+    }
   }
 ]
-

@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import {config} from '../config';
 import {fruits,getFruitDefinition} from '../catalog/catalog';
+import {spriteGeometry} from '../catalog/sizing';
 import {createSession,advanceQueue,pause,resume,endGame,restart} from '../domain/session';
 import {advanceDanger} from '../domain/danger';
 import {readBest,writeBest,type StoragePort} from '../services/high-score';
@@ -32,7 +33,8 @@ export class GameScene extends Phaser.Scene {
   this.guide=this.add.graphics();this.preview=this.add.image(this.aim,config.spawnY,getFruitDefinition(this.state.currentRank).id);
   this.coordinator=new MergeCoordinator({get:id=>this.fruitBodies.get(id),mode:()=>this.state.mode,replace:(a,b,rank)=>{
    const first=this.fruitBodies.get(a.id)!,second=this.fruitBodies.get(b.id)!;
-   const x=clampDropX((first.image.x+second.image.x)/2,getFruitDefinition(rank).radius),y=(first.image.y+second.image.y)/2;
+   const radius=getFruitDefinition(rank).radius;
+   const x=clampDropX((first.image.x+second.image.x)/2,radius),y=Math.min(config.bottom-radius,(first.image.y+second.image.y)/2);
    this.spawnFruit(rank,x,y);first.image.destroy();second.image.destroy();this.fruitBodies.delete(a.id);this.fruitBodies.delete(b.id);
   },award:points=>{this.state.score+=points;if(this.state.score>this.state.bestScore){this.state.bestScore=this.state.score;writeBest(this.storage,this.state.bestScore);}this.paint();}});
   this.matter.world.on('collisionstart',this.onCollision,this);
@@ -67,6 +69,6 @@ export class GameScene extends Phaser.Scene {
   }
  }
  paint(){renderHud(this.state);this.paintGuide();}
- private paintGuide(){if(!this.preview)return;const f=getFruitDefinition(this.state.currentRank);const x=clampDropX(this.aim,f.radius);this.preview.setTexture(f.id).setDisplaySize(f.radius*2,f.radius*2).setPosition(x,config.spawnY).setVisible(this.state.mode==='playing');this.guide.clear();if(this.state.mode==='playing'){for(let y=100;y<680;y+=18)this.guide.fillStyle(0xffffff,0.7).fillCircle(x,y,2);}}
+ private paintGuide(){if(!this.preview)return;const f=getFruitDefinition(this.state.currentRank);const x=clampDropX(this.aim,f.radius);const g=spriteGeometry(f);this.preview.setTexture(f.id).setDisplaySize(g.size,g.size).setOrigin(g.originX,g.originY).setPosition(x,config.spawnY).setVisible(this.state.mode==='playing');this.guide.clear();if(this.state.mode==='playing'){for(let y=100;y<680;y+=18)this.guide.fillStyle(0xffffff,0.7).fillCircle(x,y,2);}}
  textureCount(){return fruits.filter(f=>this.textures.exists(f.id)).length;}
 }

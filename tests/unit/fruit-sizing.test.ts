@@ -1,6 +1,7 @@
 import {expect,test} from 'vitest';
 import {fruits} from '../../src/game/catalog/catalog';
 import {config} from '../../src/game/config';
+import {fruitRadius,spriteGeometry} from '../../src/game/catalog/sizing';
 
 test('SIZ-01 geometric radii cover 3.5% to 40% of inner vessel width',()=>{
  const width=config.right-config.left;
@@ -12,4 +13,15 @@ test('SIZ-01 geometric radii cover 3.5% to 40% of inner vessel width',()=>{
   expect(fruits[i].radius).toBeGreaterThan(fruits[i-1].radius);
   expect(fruits[i].radius*2).toBeLessThan(width);
  }
+});
+
+test.each([0,31,1.5,NaN])('reject invalid sizing rank %s',rank=>expect(()=>fruitRadius(rank)).toThrow());
+test('body calibration removes transparent margins without stretching the character',()=>{
+ for(const fruit of fruits){
+  const g=spriteGeometry(fruit);
+  expect(g.size*fruit.body.diameter/fruit.body.sourceSize).toBeCloseTo(fruit.radius*2,10);
+  expect(g.originX*fruit.body.sourceSize).toBe(fruit.body.cx);
+  expect(g.originY*fruit.body.sourceSize).toBe(fruit.body.cy);
+ }
+ expect(fruitRadius(30,600)).toBeCloseTo(240);
 });
