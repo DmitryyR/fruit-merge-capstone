@@ -1,0 +1,42 @@
+Deliberate checker control on archived e77427a; test source temporarily altered then restored.
+Exit: 1
+
+CHECK: typecheck
+
+CHECK: lint
+
+CHECK: unit
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone/.local/fresh
+
+ ❯ tests/unit/merge.test.ts (37 tests | 1 failed) 12ms
+   × deliberate negative control — not a product defect 5ms
+
+ Test Files  1 failed | 5 passed (6)
+      Tests  1 failed | 68 passed (69)
+   Start at  00:12:34
+   Duration  629ms (transform 58%, worker 19%, import 17%, tests 6%)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/merge.test.ts > deliberate negative control — not a product defect
+AssertionError: expected 10 to be -1 // Object.is equality
+
+- Expected
++ Received
+
+- -1
++ 10
+
+ ❯ tests/unit/merge.test.ts:7:99
+      5| test.each([0,-1,1.5,31,NaN,Infinity])('invalid rank %s', n => expect(g…
+      6|
+      7| test('deliberate negative control — not a product defect',()=>expect(g…
+       |                                                                                                   ^
+      8|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+FAILED: unit 
