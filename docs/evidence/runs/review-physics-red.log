@@ -1,0 +1,42 @@
+[WebServer] (node:47788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:40192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:46004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [desktop] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank (1.2s)
+
+
+  1) [desktop] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 22.56
+    Received:   4.346625000000017
+
+      16 | test('outside release and secondary pointer do not drop',async({page})=>{await ready(page);await seed(page);const canvas=page.locator('canvas');await canvas.dispatchEvent('pointerdown',{pointerId:20,isPrimary:false});await canvas.dispatchEvent('pointerup',{pointerId:20,isPrimary:false,clientX:200,clientY:200});expect((await snap(page)).fruits).toHaveLength(0);await canvas.dispatchEvent('pointerdown',{pointerId:21,isPrimary:true});await page.evaluate(()=>window.dispatchEvent(new PointerEvent('pointerup',{pointerId:21,isPrimary:true,clientX:-50,clientY:-50})));expect((await snap(page)).fruits).toHaveLength(0);});
+      17 |
+    > 18 | test('physics bodies preserve catalog diameter at every rank',async({page})=>{await ready(page);for(let rank=1;rank<=30;rank++){await seed(page,[{rank,x:240,y:400,static:true}]);const body=(await snap(page)).fruits[0];const diameter=24+3*(rank-1);expect(body.collisionWidth).toBeGreaterThan(diameter*.94);expect(body.collisionWidth).toBeLessThanOrEqual(diameter*1.01);}});
+         |                                                                                                                                                                                                                                                                                    ^
+      19 |
+        at C:\Users\DmitryR\Documents\Сайт продажів\fruit-merge-capstone\tests\e2e\game.spec.ts:18:276
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\game-physics-bodies-preserve-catalog-diameter-at-every-rank-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\game-physics-bodies-preserve-catalog-diameter-at-every-rank-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\game-physics-bodies-preserve-catalog-diameter-at-every-rank-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\game-physics-bodies-preserve-catalog-diameter-at-every-rank-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank 

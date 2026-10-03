@@ -10,7 +10,7 @@ export function installWalls(scene:Phaser.Scene) {
 }
 export function addBody(scene:Phaser.Scene,id:string,rank:number,x:number,y:number,isStatic=false):LiveFruit {
  const def=getFruitDefinition(rank);
- const image=scene.matter.add.image(x,y,def.id).setCircle(def.radius).setDisplaySize(def.radius*2,def.radius*2).setBounce(0.12).setFriction(0.2).setFrictionAir(0.003).setStatic(isStatic);
+ const image=scene.matter.add.image(x,y,def.id).setDisplaySize(def.radius*2,def.radius*2).setCircle(def.radius).setBounce(0.12).setFriction(0.2).setFrictionAir(0.003).setStatic(isStatic);
  (image.body as MatterJS.BodyType).label=id;
  return {id,rank,status:'active',image,ageMs:0};
 }
