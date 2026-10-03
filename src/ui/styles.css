@@ -36,7 +36,7 @@ h1 br {display:block}
 .queue-arrow {color:var(--ink)}
 .stage-wrap {position:relative;background:linear-gradient(110deg,#fffdf44a,#fffdf41a 35%,#fffdf435);border:2px solid #fef7d4;border-radius:20px 20px 50px 50px;box-shadow:0 8px 16px #57331133,inset 0 0 0 3px #889b796e,inset 7px 0 12px #ffffff40;overflow:hidden;backdrop-filter:blur(3px)}
 #game {width:100%;aspect-ratio:2/3;touch-action:none}
-canvas {display:block!important;width:100%!important;height:100%!important;touch-action:none}
+#game canvas {display:block!important;width:100%!important;height:100%!important;touch-action:none}
 #overlay {position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff5dcdf;backdrop-filter:blur(4px);pointer-events:none;padding:20px;text-align:center}
 #overlay-icon {font-size:65px;color:var(--green)}
 #overlay h2 {font:bold 34px Georgia;color:var(--ink);margin:15px 0 5px}

@@ -1,0 +1,105 @@
+
+CHECK: typecheck
+
+CHECK: lint
+
+CHECK: unit
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+
+ Test Files  7 passed (7)
+      Tests  76 passed (76)
+   Start at  01:41:26
+   Duration  355ms (transform 67%, import 21%, tests 6%, worker 6%)
+
+
+CHECK: integration
+
+ RUN  v5.0.3 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+
+ Test Files  3 passed (3)
+      Tests  7 passed (7)
+   Start at  01:41:26
+   Duration  329ms (transform 53%, tests 24%, import 20%, worker 4%)
+
+
+CHECK: production build
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 25 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                0.67 kB │ gzip:   0.46 kB
+dist/assets/size-diagnostics-B56HxaF3.css      1.17 kB │ gzip:   0.51 kB
+dist/assets/index-D9XR-YU1.css                 7.06 kB │ gzip:   2.36 kB
+dist/assets/size-diagnostics-D0HId8gd.js       3.31 kB │ gzip:   1.81 kB
+dist/assets/index-6GldvIJP.js              1,228.78 kB │ gzip: 340.01 kB
+✓ built in 5.79s
+
+CHECK: test build
+vite v7.3.6 building client environment for e2e...
+transforming...
+✓ 26 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-e2e/index.html                                0.67 kB │ gzip:   0.46 kB
+dist-e2e/assets/size-diagnostics-B56HxaF3.css      1.17 kB │ gzip:   0.51 kB
+dist-e2e/assets/index-D9XR-YU1.css                 7.06 kB │ gzip:   2.36 kB
+dist-e2e/assets/test-api-Cevd2HhT.js               1.05 kB │ gzip:   0.61 kB
+dist-e2e/assets/size-diagnostics-DAWfyGbR.js       3.31 kB │ gzip:   1.81 kB
+dist-e2e/assets/index-h8gaNJsw.js              1,228.94 kB │ gzip: 340.06 kB
+✓ built in 5.85s
+
+CHECK: browser acceptance + production smoke
+[WebServer] (node:54176) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:51424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 33 tests using 1 worker
+
+(node:40624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (1.2s)
+  ok  2 [desktop] › tests\e2e\game.spec.ts:8:1 › FR-02/03 real drop and collision award score (3.1s)
+  ok  3 [desktop] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks same-frame gestures without shifting queue (1.0s)
+  ok  4 [desktop] › tests\e2e\game.spec.ts:10:1 › FR-07 pause freezes physics and timer; resume works (2.1s)
+  ok  5 [desktop] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it (5.1s)
+  ok  6 [desktop] › tests\e2e\game.spec.ts:12:1 › FR-08 record survives restart and reload (3.7s)
+  ok  7 [desktop] › tests\e2e\game.spec.ts:13:1 › NFR-03 ten restarts keep one collision listener and one drop (2.2s)
+  ok  8 [desktop] › tests\e2e\game.spec.ts:14:1 › NFR-02 resize uses new canvas geometry (914ms)
+  ok  9 [desktop] › tests\e2e\game.spec.ts:15:1 › NFR-07 hidden tab automatically pauses (972ms)
+  ok 10 [desktop] › tests\e2e\game.spec.ts:16:1 › outside release and secondary pointer do not drop (1.1s)
+  ok 11 [desktop] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank (1.7s)
+  ok 12 [desktop] › tests\e2e\sizing.spec.ts:6:1 › SIZ-02 all rendered bodies match physics through rotation (1.4s)
+  ok 13 [desktop] › tests\e2e\sizing.spec.ts:16:1 › SIZ-03 all ranks stay within either wall and floor after settling (1.9s)
+  ok 14 [desktop] › tests\e2e\sizing.spec.ts:26:1 › SIZ-03 merged fruit uses the same sizing and is born above floor (1.0s)
+  ok 15 [desktop] › tests\e2e\sizing.spec.ts:39:1 › SIZ-05 filled vessel keeps every body inside and stable in size (1.0s)
+(node:32964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [touch] › tests\e2e\game.spec.ts:7:1 › FR-01 ready with all 30 textures (869ms)
+  ok 17 [touch] › tests\e2e\game.spec.ts:8:1 › FR-02/03 real drop and collision award score (2.7s)
+  ok 18 [touch] › tests\e2e\game.spec.ts:9:1 › FR-05 cooldown blocks same-frame gestures without shifting queue (731ms)
+  ok 19 [touch] › tests\e2e\game.spec.ts:10:1 › FR-07 pause freezes physics and timer; resume works (1.5s)
+  ok 20 [touch] › tests\e2e\game.spec.ts:11:1 › FR-06 danger ends session, restart unlocks it (4.8s)
+  ok 21 [touch] › tests\e2e\game.spec.ts:12:1 › FR-08 record survives restart and reload (3.2s)
+  ok 22 [touch] › tests\e2e\game.spec.ts:13:1 › NFR-03 ten restarts keep one collision listener and one drop (1.5s)
+  ok 23 [touch] › tests\e2e\game.spec.ts:14:1 › NFR-02 resize uses new canvas geometry (871ms)
+  ok 24 [touch] › tests\e2e\game.spec.ts:15:1 › NFR-07 hidden tab automatically pauses (688ms)
+  ok 25 [touch] › tests\e2e\game.spec.ts:16:1 › outside release and secondary pointer do not drop (797ms)
+  ok 26 [touch] › tests\e2e\game.spec.ts:18:1 › physics bodies preserve catalog diameter at every rank (1.3s)
+  ok 27 [touch] › tests\e2e\sizing.spec.ts:6:1 › SIZ-02 all rendered bodies match physics through rotation (1.1s)
+  ok 28 [touch] › tests\e2e\sizing.spec.ts:16:1 › SIZ-03 all ranks stay within either wall and floor after settling (1.7s)
+  ok 29 [touch] › tests\e2e\sizing.spec.ts:26:1 › SIZ-03 merged fruit uses the same sizing and is born above floor (751ms)
+  ok 30 [touch] › tests\e2e\sizing.spec.ts:39:1 › SIZ-05 filled vessel keeps every body inside and stable in size (743ms)
+(node:40120) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 31 [production] › tests\smoke\production.spec.ts:2:1 › production boots without test API (1.2s)
+  ok 32 [production] › tests\smoke\production.spec.ts:3:1 › missing asset produces actionable error (833ms)
+  ok 33 [production] › tests\smoke\production.spec.ts:5:1 › SIZ-04 diagnostic shows all 30 at equal scale without changing progress (2.2s)
+
+  33 passed (1.0m)
+
+CHECK PASSED — types, lint, unit, integration, both builds, browsers, production isolation.

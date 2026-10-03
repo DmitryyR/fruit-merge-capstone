@@ -14,6 +14,10 @@ V-03: config, matter-adapter, domain, input та services не змінювал�
 
 V-04: [окремий reviewer](../reviews/visual-8d2108b.md) схвалив 8d2108b. Автор окремо відтворив ризик перезапису WebP старим SVG-генератором: [red](runs/visual-legacy-red.log), test commit 962470e → fix 8a798dc7e0a138b886cc1236318beac273e578ed. [Фінальний check](runs/visual-final-check.log): 68 unit + 7 integration + 24 browser, exit 0. Перевірявся робочий diff, пізніше зафіксований у 8a798dc; наступні зміни лише документаційні. Це авторський regression, не знахідка незалежного reviewer.
 
+## Розміри SIZ-01–05
+
+[Специфікація до реалізації](../fruit-size-plan.md), regression 74e55de і [red](runs/sizes-red.log), реалізація 15c70a3 із знайденим layout regression, [green check](runs/sizes-check-2.log): 76 unit + 7 integration + 33 browser, exit 0. [Журнал причин та виправлень](runs/sizes-work-log.md), [фактичні діаметри до/після та скриншоти](fruit-diameters.md). Старі числа тестів нижче стосуються відповідних історичних ревізій.
+
 ## Докази базової реалізації
 
 | Практика | Реальний доказ | Статус |
