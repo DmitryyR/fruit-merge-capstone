@@ -1,0 +1,11 @@
+
+ RUN  v3.2.7 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+ ✓ tests/unit/merge.test.ts (36 tests) 5ms
+ ✓ tests/unit/catalog.test.ts (10 tests) 4ms
+
+ Test Files  2 passed (2)
+      Tests  46 passed (46)
+   Start at  23:46:26
+   Duration  546ms (transform 57ms, setup 0ms, collect 84ms, tests 9ms, environment 0ms, prepare 488ms)
+

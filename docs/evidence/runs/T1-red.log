@@ -1,0 +1,175 @@
+
+ RUN  v3.2.7 C:/Users/DmitryR/Documents/Сайт продажів/fruit-merge-capstone
+
+ ❯ tests/unit/catalog.test.ts (10 tests | 1 failed) 7ms
+   × FR-01 complete catalog and lookup 3ms
+     → Not implemented
+   ✓ rejects invalid id 1ms
+   ✓ rejects invalid rank 0ms
+   ✓ rejects invalid name 0ms
+   ✓ rejects invalid texture 0ms
+   ✓ rejects invalid radius 0ms
+   ✓ rejects radius -1 0ms
+   ✓ rejects radius NaN 0ms
+   ✓ rejects radius Infinity 0ms
+   ✓ rejects missing levels 0ms
+ ❯ tests/unit/merge.test.ts (36 tests | 36 failed) 9ms
+   × FR-03/04 level 1 4ms
+     → Not implemented
+   × FR-03/04 level 2 0ms
+     → Not implemented
+   × FR-03/04 level 3 0ms
+     → Not implemented
+   × FR-03/04 level 4 0ms
+     → Not implemented
+   × FR-03/04 level 5 0ms
+     → Not implemented
+   × FR-03/04 level 6 0ms
+     → Not implemented
+   × FR-03/04 level 7 0ms
+     → Not implemented
+   × FR-03/04 level 8 0ms
+     → Not implemented
+   × FR-03/04 level 9 0ms
+     → Not implemented
+   × FR-03/04 level 10 0ms
+     → Not implemented
+   × FR-03/04 level 11 0ms
+     → Not implemented
+   × FR-03/04 level 12 0ms
+     → Not implemented
+   × FR-03/04 level 13 0ms
+     → Not implemented
+   × FR-03/04 level 14 0ms
+     → Not implemented
+   × FR-03/04 level 15 0ms
+     → Not implemented
+   × FR-03/04 level 16 0ms
+     → Not implemented
+   × FR-03/04 level 17 0ms
+     → Not implemented
+   × FR-03/04 level 18 0ms
+     → Not implemented
+   × FR-03/04 level 19 0ms
+     → Not implemented
+   × FR-03/04 level 20 0ms
+     → Not implemented
+   × FR-03/04 level 21 0ms
+     → Not implemented
+   × FR-03/04 level 22 0ms
+     → Not implemented
+   × FR-03/04 level 23 0ms
+     → Not implemented
+   × FR-03/04 level 24 0ms
+     → Not implemented
+   × FR-03/04 level 25 0ms
+     → Not implemented
+   × FR-03/04 level 26 0ms
+     → Not implemented
+   × FR-03/04 level 27 0ms
+     → Not implemented
+   × FR-03/04 level 28 0ms
+     → Not implemented
+   × FR-03/04 level 29 1ms
+     → Not implemented
+   × unequal and terminal pairs never merge 0ms
+     → Not implemented
+   × invalid rank 0 0ms
+     → Not implemented
+   × invalid rank -1 0ms
+     → Not implemented
+   × invalid rank 1.5 0ms
+     → Not implemented
+   × invalid rank 31 0ms
+     → Not implemented
+   × invalid rank NaN 0ms
+     → Not implemented
+   × invalid rank Infinity 0ms
+     → Not implemented
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 37 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/catalog.test.ts > FR-01 complete catalog and lookup
+Error: Not implemented
+ ❯ validateCatalog src/game/catalog/catalog.ts:2:75
+      1| import type { FruitDefinition } from '../types';
+      2| export function validateCatalog(_raw: unknown): FruitDefinition[] { th…
+       |                                                                           ^
+      3| export function getFruitDefinition(_rank: number): FruitDefinition { t…
+      4| 
+ ❯ tests/unit/catalog.test.ts:4:58
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/37]⎯
+
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 1
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 2
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 3
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 4
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 5
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 6
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 7
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 8
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 9
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 10
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 11
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 12
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 13
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 14
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 15
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 16
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 17
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 18
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 19
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 20
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 21
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 22
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 23
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 24
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 25
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 26
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 27
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 28
+ FAIL  tests/unit/merge.test.ts > FR-03/04 level 29
+Error: Not implemented
+ ❯ getMergeResult src/game/domain/merge.ts:2:113
+      1| // Contract stub for the first red test run.
+      2| export function getMergeResult(_a: number, _b: number, _max = 30): {ne…
+       |                                                                                                                 ^
+      3| 
+ ❯ tests/unit/merge.test.ts:3:71
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/37]⎯
+
+ FAIL  tests/unit/merge.test.ts > unequal and terminal pairs never merge
+Error: Not implemented
+ ❯ getMergeResult src/game/domain/merge.ts:2:113
+      1| // Contract stub for the first red test run.
+      2| export function getMergeResult(_a: number, _b: number, _max = 30): {ne…
+       |                                                                                                                 ^
+      3| 
+ ❯ tests/unit/merge.test.ts:4:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/37]⎯
+
+ FAIL  tests/unit/merge.test.ts > invalid rank 0
+ FAIL  tests/unit/merge.test.ts > invalid rank -1
+ FAIL  tests/unit/merge.test.ts > invalid rank 1.5
+ FAIL  tests/unit/merge.test.ts > invalid rank 31
+ FAIL  tests/unit/merge.test.ts > invalid rank NaN
+ FAIL  tests/unit/merge.test.ts > invalid rank Infinity
+Error: Not implemented
+ ❯ getMergeResult src/game/domain/merge.ts:2:113
+      1| // Contract stub for the first red test run.
+      2| export function getMergeResult(_a: number, _b: number, _max = 30): {ne…
+       |                                                                                                                 ^
+      3| 
+ ❯ tests/unit/merge.test.ts:5:70
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/37]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  37 failed | 9 passed (46)
+   Start at  23:45:30
+   Duration  2.50s (transform 56ms, setup 0ms, collect 94ms, tests 16ms, environment 0ms, prepare 3.92s)
+
