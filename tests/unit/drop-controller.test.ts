@@ -1,0 +1,4 @@
+import {expect,test} from 'vitest';
+import {clientToWorldX,clampDropX,DropController} from '../../src/game/input/drop-controller';
+test('FR-02/NFR-02 scaled offset input and walls',()=>{expect(clientToWorldX(295,100,390,480)).toBe(240);expect(clampDropX(0,12)).toBe(36);expect(clampDropX(999,12)).toBe(444);expect(()=>clientToWorldX(1,0,0,480)).toThrow();});
+test('one primary gesture; outside release cancels; reset forgets gesture',()=>{const c=new DropController(); const rect={left:100,top:20,width:390,height:585}; c.begin(1,true);c.begin(2,false);expect(c.end(2,295,100,rect)).toBeNull();expect(c.end(1,295,100,rect)).toBe(240);expect(c.end(1,295,100,rect)).toBeNull();c.begin(3,true);expect(c.end(3,0,100,rect)).toBeNull();c.begin(4,true);c.reset();expect(c.end(4,200,100,rect)).toBeNull();});

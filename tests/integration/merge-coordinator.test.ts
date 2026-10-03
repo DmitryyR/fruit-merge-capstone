@@ -1,0 +1,12 @@
+import {expect,test} from 'vitest';
+import {MergeCoordinator} from '../../src/game/services/merge-coordinator';
+import type {FruitInstance,GameMode} from '../../src/game/types';
+function world() {
+ const rows=new Map<string,FruitInstance>(['a','b','c'].map(id=>[id,{id,rank:1,status:'active'}]));let score=0;let mode:GameMode='playing';let fail=false;let serial=0;
+ const coordinator=new MergeCoordinator({get:id=>rows.get(id),mode:()=>mode,replace:(a,b,rank)=>{if(fail)throw new Error('world failure');rows.delete(a.id);rows.delete(b.id);const id=`new-${++serial}`;rows.set(id,{id,rank,status:'active'});},award:p=>{score+=p;}});
+ return {rows,coordinator,score:()=>score,pause:()=>{mode='paused';},fail:()=>{fail=true;}};
+}
+test('NFR-01 duplicate, reversed, shared and self collision',()=>{const w=world();expect(w.coordinator.tryMerge('a','a')).toBe(false);expect(w.coordinator.tryMerge('a','b')).toBe(true);expect(w.coordinator.tryMerge('b','a')).toBe(false);expect(w.coordinator.tryMerge('b','c')).toBe(false);w.coordinator.flushMerges();expect(w.rows.size).toBe(2);expect(w.score()).toBe(10);expect(w.rows.get('c')?.status).toBe('active');expect(w.coordinator.tryMerge('a','b')).toBe(false);w.coordinator.flushMerges();expect(w.score()).toBe(10);});
+test('chain awards 30 total; terminal and unequal never merge',()=>{const w=world();w.coordinator.tryMerge('a','b');w.coordinator.flushMerges();w.rows.set('d',{id:'d',rank:2,status:'active'});expect(w.coordinator.tryMerge('new-1','c')).toBe(false);w.coordinator.tryMerge('new-1','d');w.coordinator.flushMerges();expect(w.score()).toBe(30);expect(w.rows.get('new-2')?.rank).toBe(3);for(const id of ['x','y'])w.rows.set(id,{id,rank:30,status:'active'});expect(w.coordinator.tryMerge('x','y')).toBe(false);});
+test('failure releases reservation without points',()=>{const w=world();w.fail();w.coordinator.tryMerge('a','b');expect(()=>w.coordinator.flushMerges()).toThrow('world failure');expect(w.score()).toBe(0);expect(w.rows.get('a')?.status).toBe('active');});
+test('pause/reset clears queued old work',()=>{const w=world();w.coordinator.tryMerge('a','b');w.pause();w.coordinator.flushMerges();expect(w.score()).toBe(0);expect(w.rows.get('a')?.status).toBe('active');w.coordinator.reset();expect(w.coordinator.tryMerge('a','c')).toBe(false);});
