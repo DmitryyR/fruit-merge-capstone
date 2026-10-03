@@ -1,0 +1,18 @@
+import {fruits,getFruitDefinition} from '../game/catalog/catalog';
+import type {GameState} from '../game/types';
+export function mountHud() {
+ document.querySelector('#app')!.innerHTML=`
+ <header class="topbar"><a class="wordmark" href="./"><span class="leaf-mark">❧</span> тихі ігри</a><span class="edition">Маленька перерва. Великий врожай.</span><span class="tag">FRUIT MERGE</span></header>
+ <main class="layout"><section class="intro"><div class="eyebrow">ЗБЕРИ СВІЙ ВРОЖАЙ</div><h1>Фруктовий<br>сад</h1><p class="intro-copy">Два однакові фрукти —<br>один новий. І ще трішки радості.</p><div class="scoreboard"><div><span class="metric-label">Твій рахунок</span><strong id="score">0</strong></div><div class="best"><span class="metric-label">Найкращий</span><b id="best">0</b></div></div><div class="howto"><span class="small-leaf">↘</span><p>Обери місце й відпусти фрукт.<br>Поєднуй однакові. Залишай<br>місце під пунктирною лінією.</p></div><div class="botanical" aria-hidden="true">❧</div></section>
+ <section class="play-area" aria-label="Ігрове поле"><div class="queue"><div class="current"><img id="current-img" alt=""><span>Зараз <b id="current-name"></b></span></div><span class="queue-arrow" aria-hidden="true">→</span><div class="next"><span>Наступний</span><img id="next-img" alt=""></div></div><div class="stage-wrap"><div id="game"></div><div id="overlay" hidden><span id="overlay-icon">☾</span><h2 id="overlay-title">Пауза</h2><p id="overlay-copy">Твій сад зачекає.</p></div></div><div class="controls"><button id="pause" type="button" disabled>Пауза</button><button id="restart" type="button" disabled>Нова гра</button></div><p class="hint">Наведи й натисни · або торкнися поля</p><div id="error" role="alert" hidden></div></section>
+ <aside class="collection"><div class="collection-heading"><h2>Фруктова родина</h2><span>30 рівнів</span></div><p>Кожне злиття — нове знайомство.</p><ol class="fruit-grid">${fruits.map(f=>`<li title="${f.rank}. ${f.name}"><img src="${f.texture}" alt="${f.name}" loading="lazy"><span>${String(f.rank).padStart(2,'0')}</span></li>`).join('')}</ol><div class="collection-note"><span>✳</span> Не поспішай.<br>Тут ростуть маленькі рекорди.</div></aside></main><footer>Створено для спокійних хвилин <span>Fruit Merge · 2026</span></footer>`;
+}
+const text=(id:string,value:string)=>{const el=document.getElementById(id)!;if(el.textContent!==value)el.textContent=value;};
+function fruitImage(id:string,rank:number) {const img=document.getElementById(id) as HTMLImageElement;const fruit=getFruitDefinition(rank);if(img.getAttribute('src')!==fruit.texture)img.setAttribute('src',fruit.texture);img.alt=fruit.name;}
+export function renderHud(state:GameState) {
+ text('score',String(state.score));text('best',String(state.bestScore));fruitImage('current-img',state.currentRank);fruitImage('next-img',state.nextRank);text('current-name',getFruitDefinition(state.currentRank).name);
+ const pause=document.getElementById('pause') as HTMLButtonElement;pause.disabled=state.mode==='gameOver';pause.textContent=state.mode==='paused'?'Продовжити':'Пауза';pause.setAttribute('aria-pressed',String(state.mode==='paused'));
+ (document.getElementById('restart') as HTMLButtonElement).disabled=false;
+ document.getElementById('overlay')!.hidden=state.mode==='playing';text('overlay-title',state.mode==='gameOver'?'Гарний врожай!':'Пауза');text('overlay-copy',state.mode==='gameOver'?`Ти зібрав ${state.score} очок. Спробуємо ще?`:'Твій сад зачекає.');text('overlay-icon',state.mode==='gameOver'?'❧':'☾');
+}
+export function showError(message:string) {const el=document.getElementById('error')!;el.hidden=false;el.textContent=message;}
