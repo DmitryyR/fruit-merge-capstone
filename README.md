@@ -40,7 +40,7 @@ npm run check
 
 Проєкт для capstone Agentic Engineering. Статус відео, PR і платформи в [поточному стані](docs/current-state.md); сама наявність репозиторію не означає завершене подання.
 
-Навчальний [PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) створено як draft: очікуються ім’я для сертифіката та відео.
+Навчальний [PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) створено як draft: ім’я вже внесене, очікується відео.
 
 ## Оновлене оформлення
 
