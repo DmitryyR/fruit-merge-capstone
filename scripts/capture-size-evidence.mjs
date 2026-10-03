@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs';
+const base=process.env.FRUIT_EVIDENCE_URL??'http://127.0.0.1:4180';
+const b=await chromium.launch({headless:true});const p=await b.newPage({viewport:{width:1440,height:900}});
+await p.goto(`${base}/`);await p.waitForFunction(()=>window.__FRUIT_MERGE_TEST__);
+const results=[];for(let rank=1;rank<=30;rank++)results.push(await p.evaluate(rank=>{const api=window.__FRUIT_MERGE_TEST__;api.load([{rank,x:240,y:400,static:true}],1);return api.snapshot().fruits[0];},rank));
+fs.writeFileSync('docs/evidence/runs/sizes-after.json',JSON.stringify({viewport:{width:1440,height:900},canvas:await p.locator('canvas').boundingBox(),fruits:results},null,2));
+const seeds=[{rank:25,x:156,y:560},{rank:22,x:358,y:585},{rank:20,x:280,y:410},{rank:18,x:100,y:365},{rank:16,x:385,y:435},{rank:14,x:192,y:300},{rank:12,x:315,y:280},{rank:10,x:82,y:265}];
+await p.evaluate(seeds=>{const api=window.__FRUIT_MERGE_TEST__;api.load(seeds,1);api.advance(180);},seeds);await p.screenshot({path:'docs/evidence/screenshots/sizes-desktop.png'});
+await p.setViewportSize({width:390,height:844});await p.screenshot({path:'docs/evidence/screenshots/sizes-mobile.png'});
+await p.setViewportSize({width:1440,height:900});await p.evaluate(()=>{const api=window.__FRUIT_MERGE_TEST__;api.load([{rank:30,x:240,y:450}],1);api.advance(120);});await p.screenshot({path:'docs/evidence/screenshots/sizes-largest.png'});
+await p.goto(`${base}/?view=sizes`);await p.waitForSelector('[data-ready="true"]');await p.screenshot({path:'docs/evidence/screenshots/sizes-all-30.png',fullPage:true});
+await b.close();

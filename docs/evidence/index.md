@@ -16,7 +16,7 @@ V-04: [окремий reviewer](../reviews/visual-8d2108b.md) схвалив 8d2
 
 ## Розміри SIZ-01–05
 
-[Специфікація до реалізації](../fruit-size-plan.md), regression 74e55de і [red](runs/sizes-red.log), реалізація 15c70a3 із знайденим layout regression, [green check](runs/sizes-check-2.log): 76 unit + 7 integration + 33 browser, exit 0. [Журнал причин та виправлень](runs/sizes-work-log.md), [фактичні діаметри до/після та скриншоти](fruit-diameters.md). Старі числа тестів нижче стосуються відповідних історичних ревізій.
+[Специфікація до реалізації](../fruit-size-plan.md), regression 74e55de і [red](runs/sizes-red.log), реалізація 15c70a3 із знайденим layout regression, [green check](runs/sizes-check-2.log): 76 unit + 7 integration + 33 browser, exit 0. [Журнал причин та виправлень](runs/sizes-work-log.md), [фактичні діаметри до/після та скриншоти](fruit-diameters.md). [Незалежний reviewer](../reviews/sizes-c568427.md): approve для c568427, без actionable findings. Старі числа тестів нижче стосуються відповідних історичних ревізій.
 
 ## Докази базової реалізації
 
