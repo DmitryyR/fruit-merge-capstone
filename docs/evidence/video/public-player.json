@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-04T14:42:34.333Z",
+  "url": "https://dmitryyr.github.io/fruit-merge-capstone/capstone.html",
+  "httpStatus": 200,
+  "anonymousContext": true,
+  "metadata": {
+    "duration": 113.633333,
+    "width": 1920,
+    "height": 1080,
+    "currentSrc": "https://dmitryyr.github.io/fruit-merge-capstone/media/Fruit_Merge_Capstone_Final_UA.mp4",
+    "readyState": 4
+  },
+  "playbackAdvanced": true,
+  "seekSucceeded": true,
+  "sha256": "2082b9a788e34166d4f69a356b80e1dcca1d969a01d6b64ea9ae943158663e35",
+  "files": [
+    {
+      "name": "Fruit_Merge_Capstone_Final_UA.mp4",
+      "status": 200,
+      "bytes": 9114551,
+      "sha256": "2082b9a788e34166d4f69a356b80e1dcca1d969a01d6b64ea9ae943158663e35"
+    },
+    {
+      "name": "Fruit_Merge_Capstone_Narration_UA.mp3",
+      "status": 200,
+      "bytes": 2728556,
+      "sha256": "3f2b2c358fa89236fcf1206248b14c5f7c817cdc3baec01ae5e57a685669ba0d"
+    },
+    {
+      "name": "Fruit_Merge_Capstone_Final_UA.srt",
+      "status": 200,
+      "bytes": 3342,
+      "sha256": "5942c33c21fac6888f7a9b9de7e4486952a602282e551da98c677b55f063330d"
+    }
+  ],
+  "mobileOverflow": false,
+  "pageerrors": []
+}

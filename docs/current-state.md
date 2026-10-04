@@ -14,7 +14,7 @@
 - T5: незалежний checker знайшов P1 колайдера; regression f224a78 показав red, fix e77427a перевірено. Додаткові integration докази у 700d191.
 - Остаточний check: 68 unit + 6 integration + 24 browser, типи/lint/build/production isolation проходять. Дивись docs/evidence/index.md.
 - Fresh install/check для e77427a успішні; Linux GitHub CI також успішний. Візуально оглянуто 1440×900 і 390×844, без горизонтального overflow.
-- T6: створено [draft PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) у репозиторій курсу; лише submission README. Ім’я Dmitriy Remarenko вже внесене до PR. Відеозапис готовий і опублікований у release capstone-video-v1; сторінка програвача додається до Pages. URL завдання навчальної платформи невідомий; подання й фінальне приймання не заявляються виконаними.
+- T6: створено [draft PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) у репозиторій курсу; лише submission README. Ім’я Dmitriy Remarenko вже внесене до PR. Відеозапис готовий і опублікований у release capstone-video-v1; [сторінка програвача](https://dmitryyr.github.io/fruit-merge-capstone/capstone.html) опублікована й перевірена без входу. URL завдання навчальної платформи невідомий; подання й фінальне приймання не заявляються виконаними.
 
 Реальний телефон, довгі партії й досягнення rank30 вручну не перевірялися. Hidden-tab перевірка синтетична. Ці обмеження описані у звіті.
 
