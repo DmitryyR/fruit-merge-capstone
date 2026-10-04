@@ -28,3 +28,6 @@
 [CI і deploy d8182c0](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37210015889) завершилися success: повний check, завантаження release MP4, перевірка SHA-256, Pages. [Фактичний CI log](../evidence/video/ci-deploy.log), [jobs](../evidence/video/ci-deploy.json).
 
 [Програвач](https://dmitryyr.github.io/fruit-merge-capstone/capstone.html) перевірено04.10.2026 в новому анонімному Chromium: HTTP200, readyState4, H.2641920×1080,113.633333с; playback просувається, seek працює. MP4 на Pages і всі3 release-файли завантажуються без логіну, SHA-256 збігаються з локальними. Mobile390×844 без горизонтального overflow; pageerrors=[]. [Машинний доказ](../evidence/video/public-player.json). Людське прослуховування не заявляється.
+
+
+Навчальний [PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) оновлено та повторно прочитано: body точно збігається з pr-draft.md, README форку — з capstone-readme.md, isDraft=true, єдиний змінений файл — submissions/dmitry-fruit-merge/README.md. Ім’я Dmitriy Remarenko збережено. [Квитанція перевірки](../evidence/video/submission-update.json). Подання у платформі не виконано через відсутню адресу завдання.

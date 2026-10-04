@@ -21,3 +21,5 @@
 Використані Codex, GitHub connector/CLI, PowerShell, Node/npm, TypeScript, Phaser, Vitest, Playwright та окремий reviewer-субагент. Project Factory не використовувалася.
 
 Фінальна відеопідготовка: MP4 113.633с, 1920×1080 H.264/AAC30fps; український чоловічий голос Ostap,24 субтитри,38.733с реального браузерного запису. [Матеріали й перевірки](submission/final-check.md). Свіжий check на ffa173d:76unit+7integration+33browser,exit0; незалежний capstone reviewer approve. Runtime/ресурси/тести не змінені. Залишаються фінальний перегляд учасником і подання PR у навчальній платформі.
+
+Фінальний статус відеоздачі: PR #22 і README форку оновлені, повторне читання підтвердило точний збіг із локальними матеріалами; PR лишається draft, не merged. [Квитанція](evidence/video/submission-update.json). Великі медіа тільки в release/Pages та локальному artifacts, не у звичайному git.

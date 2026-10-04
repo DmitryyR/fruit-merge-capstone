@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-04T14:45:55.313Z",
+  "url": "https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22",
+  "isDraft": true,
+  "headRefOid": "99e4c74f35796f5cf089e192577e5d36edc1ee95",
+  "courseFiles": [
+    "submissions/dmitry-fruit-merge/README.md"
+  ],
+  "bodyMatchesLocalDraft": true,
+  "submissionMatchesDraft": true,
+  "video": "https://dmitryyr.github.io/fruit-merge-capstone/capstone.html",
+  "platformSubmitted": false,
+  "platformReason": "Assignment URL/field not provided",
+  "name": "Dmitriy Remarenko"
+}
