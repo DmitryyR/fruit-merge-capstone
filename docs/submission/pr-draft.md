@@ -4,42 +4,52 @@ Dmitriy Remarenko
 
 ## Проєкт
 
-**[Грати онлайн — публічне демо](https://dmitryyr.github.io/fruit-merge-capstone/)** · [Діагностика 30 розмірів](https://dmitryyr.github.io/fruit-merge-capstone/?view=sizes). Працює у браузері без встановлення Node.js та без входу.
+«Фруктовий сад» — браузерна merge-гра: скидання мишею/дотиком, фізичні зіткнення, 30 фруктів каталогу, очки, пауза, нова гра та локальний рекорд. Без сервера й акаунтів.
 
-«Фруктовий сад» — браузерна Fruit Merge: скидання мишею/дотиком, злиття однакових фруктів, 30 рівнів каталогу, очки, пауза, нова гра та локальний рекорд. Без сервера й акаунтів.
+**[Грати онлайн](https://dmitryyr.github.io/fruit-merge-capstone/)** · [Порівняти 30 розмірів](https://dmitryyr.github.io/fruit-merge-capstone/?view=sizes).
 
-**Де код:** [DmitryyR/fruit-merge-capstone](https://github.com/DmitryyR/fruit-merge-capstone/tree/7d966bd7106684e7b3c1ef2749143661010b74fc). У цьому PR додано лише `submissions/dmitry-fruit-merge/README.md`; кореневі файли курсу не змінені.
+**Де код:** [окремий репозиторій гри](https://github.com/DmitryyR/fruit-merge-capstone/tree/49bf24572f639c7b4ee20c6223844fb6cc0ca4af). Цей навчальний PR змінює тільки `submissions/dmitry-fruit-merge/README.md`; кореневі файли курсу не змінені.
 
 ## Відео-демо (1–2 хв)
 
-**Посилання:** ще не надане. [Сценарій для запису](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/submission/video-script.md). Це незавершений крок здачі, а не готове відео.
+**Посилання: [дивитися фінальне відео](https://dmitryyr.github.io/fruit-merge-capstone/capstone.html).**
+
+113.633с, 1920×1080, H.264/AAC, 30fps; український чоловічий синтезований голос Microsoft Ostap та субтитри. [MP4, MP3, SRT — публічні файли](https://github.com/DmitryyR/fruit-merge-capstone/releases/tag/capstone-video-v1).
+
+38.733с фактичного браузерного запису: справжні mouse input→collision→merge→score10, пауза/продовження, перезапуск зі збереженням фактичного рекорду. Початкові високі фрукти підготовлені й явно позначені «Тестовий сценарій». Далі — конкретні правила, код, історичний red/fix/green, свіжий check і незалежне review. [Сценарій і джерела](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/submission/video-script.md), [технічна перевірка відео](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/submission/final-check.md).
 
 ## Застосовані практики Agentic Engineering
 
-- [x] **Контекст-інженерія** — [AGENTS.md](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/AGENTS.md), [застосування правил у робочому журналі](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/agent-loop.md).
-- [x] **Цикли (loop engineering)** — [фактичні раунди перевірки, виправлень і повторних прогонів](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/agent-loop.md), із ревізіями, raw logs та причиною зупинки. Агент виконував їх у межах одного погодженого плану, без промпта на кожну правку.
-- [x] **Верифікація** — [merge test](https://github.com/DmitryyR/fruit-merge-capstone/blob/700d191/tests/unit/merge.test.ts), [red](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/T1-red.log), [green](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/T1-green.log), [final check](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/visual-final-check.log).
-- [x] **maker ≠ checker** — [окремий reviewer report](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/reviews/cbcfa7f.md). Знайдено P1: масштабування зображення зменшувало колайдер. [Regression](https://github.com/DmitryyR/fruit-merge-capstone/commit/f224a78) та [fix](https://github.com/DmitryyR/fruit-merge-capstone/commit/e77427a).
-- [x] **Специфікації наперед (SDD)** — [docs-only commit c941d33](https://github.com/DmitryyR/fruit-merge-capstone/commit/c941d33) до першого коду, [рішення й уточнення](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/decisions.md).
+- [x] **Контекст-інженерія** — [AGENTS.md](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/AGENTS.md) вимагає резервувати обидва ID до зміни світу; [координатор](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/src/game/services/merge-coordinator.ts) це робить, [duplicate/reversed/shared regression](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/tests/integration/merge-coordinator.test.ts) перевіряє відсутність повторних очок. Статичні вимоги відокремлено від динамічних SHA/diff/log.
+- [x] **Цикли (loop engineering)** — [фактичний журнал раундів](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/runs/agent-loop.md): помилка→аналіз→виправлення→повтор, умови зупинки й ревізії. Це історичний виконаний цикл; поточний check одразу green і не видається за новий цикл виправлення.
+- [x] **Верифікація** — [свіжий повний check](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/runs/capstone-final-check.log), [дата/exit/SHA/diff](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/runs/capstone-final-check.json); 116 тестів. Історичний regression [red](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/runs/review-physics-red.log)→[fix e77427a](https://github.com/DmitryyR/fruit-merge-capstone/commit/e77427a)→[green](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/runs/final-check.log).
+- [x] **maker ≠ checker** — [новий окремий reviewer](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/reviews/capstone-review.md): read-only аналіз і власні браузерні сценарії, нових findings немає. [Попередній checker](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/reviews/cbcfa7f.md) знайшов P1 колайдера, що підтверджено regression-тестом і виправлено.
+- [x] **Специфікації наперед (SDD)** — [docs-only c941d33](https://github.com/DmitryyR/fruit-merge-capstone/commit/c941d33) перед першим кодом; [вимоги](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/requirements.md), [специфікація нових розмірів](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/fruit-size-plan.md). Це перевірена історія, а не документація заднім числом.
 - [ ] **Журнал рівнів довіри** — окремою практикою не заявляється.
-- [ ] **Project Factory** — не використовувалася: невеликий проєкт, достатньо вимог, правил і перевірок.
+- [ ] **Project Factory** — не використовувалася; для цього масштабу вистачило специфікацій, правил і перевірок.
 - [ ] Інше — не заявляється.
+
+[Повна матриця доказів](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/index.md).
 
 ## Інструменти та MCP
 
-Codex desktop; GitHub connector для читання умов; GitHub CLI для repo/fork/push; PowerShell, Node/npm. TypeScript, Vite, Phaser/Matter, Vitest, Playwright. Skills: brainstorming, writing-plans, executing-plans, test-driven-development, frontend-design, systematic-debugging, requesting-code-review, verification-before-completion. Окремий fresh-context reviewer-субагент. Посібник DOCX прочитано локально; його промпти не сприймалися як виконані дії.
+Codex desktop, GitHub connector для читання умов, GitHub CLI для repo/fork/PR/release, PowerShell, Node/npm, TypeScript, Vite, Phaser/Matter, Vitest, Playwright. Imagegen створив графіку; оптимізація WebP виконана за прямим дозволом користувача. Для відео — Python, edge-tts, truststore, FFmpeg; TTS із перевіркою TLS. Окремі reviewer-субагенти.
+
+Застосовані в роботі skills: brainstorming, writing-plans, executing-plans, test-driven-development, frontend-design, systematic-debugging, requesting-code-review, verification-before-completion, imagegen. [Відтворення запису/монтажу](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/submission/video-build.md).
 
 ## Що вирішував(ла) я, а що агент
 
-Учасник вимагав вимоги, план та AGENTS.md до реалізації, переглянув пропозицію й погодив обсяг, стек, каталог 30 рівнів, послідовне виконання та окремого checker. Project Factory дозволив лише за доречності; агент обґрунтував відмову від неї. Ризик практичної недосяжності rank30 був показаний до погодження.
+Учасник обрав фруктову гру й 30 фруктів, вимагав план до коду, погодив продовження, надав референси. Конкретні втручання: залишити поточну посудину; дозволити оптимізацію графіки; замінити попередній ріст розмірів на задану геометричну формулу; підготувати українське чоловіче відео й делегувати незалежне рев’ю.
 
-Агент написав код, початкові SVG, тести й документацію; після погодження макета створив через imagegen нові растрові фрукти й фон та за прямим дозволом учасника оптимізував їх у WebP; запускав перевірки та виправляв підтверджені проблеми. Реальні втручання агента: відділив помилку sandbox від поведінкового red; уточнив некоректну часову передумову cooldown-тесту; після незалежного review відтворив і виправив зменшений фізичний колайдер. Додаткових рішень або ручних втручань учасника не вигадували.
+Агент підготував вимоги, код, ресурси, тести, публікацію й відео. Робота не пройшла без проблем: після незалежного review тест підтвердив зменшення колайдера; змінено порядок scale/setCircle. Часову передумову cooldown-тесту виправлено з поясненням у журналі; SVG-генератор захищено від перезапису WebP; для нових розмірів виправлено layout regression. [Розміри до/після](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/fruit-diameters.md), [журнал розмірів](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/runs/sizes-work-log.md).
+
+Під час відеопідготовки нових дефектів продукту не знайдено. Сценарій скорочено за фактичною довжиною голосу, запис перевіряє реальний рекорд, для AAC скориговано запас піка. Користувачу не приписується ручне тестування або приймання. [Підтверджені ролі](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/submission/human-agent-roles.md).
 
 ## Перевірка
 
 `npm ci` → `npx playwright install chromium` → `npm run check`.
 
-Перевірена ревізія набору коду/тестів: `c568427fa89df264b7e2e9d12de99ae7b82b1a60`; пакет документів із raw logs: `7d966bd7106684e7b3c1ef2749143661010b74fc`.
+Свіжий локальний прогін 04.10.2026: `ffa173db7db51a364c761de902b6bd7a6f758486`, чисте дерево, exit0. Після нього runtime/ресурси/тести не змінені; додано матеріали, програвач і пакування медіа у Pages.
 
 ```text
 Unit: 76 passed
@@ -48,25 +58,9 @@ Browser: 33 passed (desktop + touch + production smoke)
 CHECK PASSED — types, lint, unit, integration, both builds, browsers, production isolation.
 ```
 
-[Сирий фінальний вивід](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-check-2.log). [Успішний Linux CI e77427a](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37154207746) перевірив production fix із попередніми 72 unit/integration та тими самими 24 browser scenarios. [Звіт з обмеженнями](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/qa/acceptance-report.md).
+Відео повністю декодується без помилок; вимір готового AAC -16.21LUFS/-1.92dBTP, 24 блоки субтитрів за фактичними WordBoundary. [Метадані й обмеження](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/submission/final-check.md).
 
-Фізичний телефон, довгі партії та ручне досягнення rank30 не перевірені. Відео й подання на навчальній платформі ще не виконані; цей draft не заявляє повну готовність capstone до приймання.
-
-
-## Погоджене оновлення оформлення
-
-Учасник надав візуальні референси, наполіг на збереженні поточної посудини, погодив макет і локальну оптимізацію графіки. Додано садовий фон, кремові панелі та 30 фруктів у новому порядку. Фізичні параметри й правила не змінювалися; бонусні механіки не додавалися. 31 графічний ресурс: 52,5 МБ → 0,8 МБ.
-
-[План](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/visual-refresh-plan.md), [desktop](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/screenshots/visual-desktop.png), [mobile](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/screenshots/visual-mobile.png), [окреме review](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/reviews/visual-8d2108b.md). Скриншоти містять контрольовану сцену, не ручне проходження. Автор додатково захистив старий SVG-генератор від перезапису WebP: regression red 962470e → fix 8a798dc. Фінальний check: 68 unit + 7 integration + 24 browser, exit 0.
+Не перевірені реальний телефон, Safari/Firefox, довгі партії до rank30 та повна доступність Canvas. Суб’єктивне прослуховування й остаточне приймання — за учасником. PR залишається draft для його перегляду; подання на платформі не виконане, бо адресу завдання не надано. [Залишкові кроки](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/submission/remaining-steps.md).
 
 
-## Розміри фруктів SIZ-01–05
-
-За прямим запитом учасника всі 30 радіусів переведено на геометричну прогресію 15.12..172.8 px (+8.7633% за рівень). Відкалібровано видиме тіло без прозорих полів/листя, фізика й спрайт мають спільний центр. Spawn і merge використовують одну конфігурацію; результат merge затискається над дном. Посудина, очки, черга й рекорд збережені. Додано read-only `?view=sizes` для всіх 30 рівнів.
-
-[Специфікація](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/fruit-size-plan.md), [таблиця до/після](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/fruit-diameters.md), [скриншот](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/screenshots/sizes-desktop.png), [журнал red→green](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-work-log.md), [незалежне рев'ю c568427](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/reviews/sizes-c568427.md): approve, actionable findings немає. [Фінальний check](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-check-2.log): 76 unit + 7 integration + 33 browser, exit 0. Сцени високих рівнів синтетичні.
-
-
-## Публікація
-
-GitHub Pages публікує production тільки після успішного повного check. [Перша успішна публікація 7defe3b](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37206623225). Публічну адресу перевірено в ізольованому Chromium: HTTP 200, 30 фруктів і фон без помилок, drop/pause/restart, desktop/mobile та діагностика; тестового API немає. Локальний рекорд збережений на локальній адресі, автоматичного перенесення між адресами немає. Живе демо не замінює ще не надане відео.
+Публікацію підтверджено: [повний Linux CI і deploy](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37210015889), [анонімний playback/seek і SHA-256 файлів](https://github.com/DmitryyR/fruit-merge-capstone/blob/49bf24572f639c7b4ee20c6223844fb6cc0ca4af/docs/evidence/video/public-player.json). Відео відкривається без логіну.
