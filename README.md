@@ -6,6 +6,8 @@
 
 Для гри за публічним посиланням нічого встановлювати не потрібно. Рекорд зберігається окремо в кожному браузері та для кожної адреси сайту; локальний рекорд автоматично на публічну адресу не переноситься.
 
+**[Фінальне відео — 1 хв 54 с](https://dmitryyr.github.io/fruit-merge-capstone/capstone.html)** · [MP4, MP3 і субтитри](https://github.com/DmitryyR/fruit-merge-capstone/releases/tag/capstone-video-v1) · [Матеріали здачі](docs/submission/final-check.md)
+
 ## Запуск
 
 Потрібні Node.js 22.12+ (перевіряється на Node 24), npm та сучасний браузер.

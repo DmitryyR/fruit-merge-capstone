@@ -14,10 +14,10 @@
 - T5: незалежний checker знайшов P1 колайдера; regression f224a78 показав red, fix e77427a перевірено. Додаткові integration докази у 700d191.
 - Остаточний check: 68 unit + 6 integration + 24 browser, типи/lint/build/production isolation проходять. Дивись docs/evidence/index.md.
 - Fresh install/check для e77427a успішні; Linux GitHub CI також успішний. Візуально оглянуто 1440×900 і 390×844, без горизонтального overflow.
-- T6: створено [draft PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) у репозиторій курсу; лише submission README. Ім’я Dmitriy Remarenko вже внесене до PR. Готовий відеозапис і URL завдання навчальної платформи ще не надані. PR не можна назвати остаточною здачею до заповнення цих полів і подання.
+- T6: створено [draft PR #22](https://github.com/koldovsky/2026-agentic-engineering-crash-course-capstone/pull/22) у репозиторій курсу; лише submission README. Ім’я Dmitriy Remarenko вже внесене до PR. Відеозапис готовий і опублікований у release capstone-video-v1; сторінка програвача додається до Pages. URL завдання навчальної платформи невідомий; подання й фінальне приймання не заявляються виконаними.
 
 Реальний телефон, довгі партії й досягнення rank30 вручну не перевірялися. Hidden-tab перевірка синтетична. Ці обмеження описані у звіті.
 
 Використані Codex, GitHub connector/CLI, PowerShell, Node/npm, TypeScript, Phaser, Vitest, Playwright та окремий reviewer-субагент. Project Factory не використовувалася.
 
-Наступні дії: записати 1–2 хв демо за docs/submission/video-script.md, додати відео в PR, перевірити доступ без логіну, подати клікабельний PR URL у правильне поле платформи та перевірити збереження.
+Фінальна відеопідготовка: MP4 113.633с, 1920×1080 H.264/AAC30fps; український чоловічий голос Ostap,24 субтитри,38.733с реального браузерного запису. [Матеріали й перевірки](submission/final-check.md). Свіжий check на ffa173d:76unit+7integration+33browser,exit0; незалежний capstone reviewer approve. Runtime/ресурси/тести не змінені. Залишаються фінальний перегляд учасником і подання PR у навчальній платформі.

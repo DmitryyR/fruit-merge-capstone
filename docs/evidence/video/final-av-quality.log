@@ -1,0 +1,57 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DmitryR\Documents\Сайт продажів\fruit-merge-capstone\artifacts\capstone\Fruit_Merge_Capstone_Final_UA.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:01:53.63, start: 0.000000, bitrate: 641 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 460 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 171 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0(eng): Video: wrapped_avframe, yuv420p(tv, bt470bg/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 wrapped_avframe
+  Stream #0:1(und): Audio: pcm_s16le, 192000 Hz, mono, s16, 3072 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+frame=  526 fps=0.0 q=-0.0 size=N/A time=00:00:15.20 bitrate=N/A speed=29.9x    
+frame= 1080 fps=1056 q=-0.0 size=N/A time=00:00:33.10 bitrate=N/A speed=32.4x    
+frame= 1667 fps=1078 q=-0.0 size=N/A time=00:00:52.70 bitrate=N/A speed=34.1x    
+frame= 2256 fps=1095 q=-0.0 size=N/A time=00:01:12.40 bitrate=N/A speed=35.1x    
+frame= 2844 fps=1105 q=-0.0 size=N/A time=00:01:31.90 bitrate=N/A speed=35.7x    
+frame= 3357 fps=1086 q=-0.0 size=N/A time=00:01:49.00 bitrate=N/A speed=35.3x    
+[Parsed_loudnorm_0 @ 000001bdaed4ea40] 
+{
+	"input_i" : "-16.21",
+	"input_tp" : "-1.92",
+	"input_lra" : "3.10",
+	"input_thresh" : "-26.52",
+	"output_i" : "-16.20",
+	"output_tp" : "-1.73",
+	"output_lra" : "3.10",
+	"output_thresh" : "-26.51",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.20"
+}
+[out#0/null @ 000001bdabfb17c0] video:1465KiB audio:42616KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 3409 fps=1064 q=-0.0 Lsize=N/A time=00:01:53.63 bitrate=N/A speed=35.5x    

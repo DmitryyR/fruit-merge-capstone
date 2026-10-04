@@ -15,6 +15,14 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run check
+      - name: Add verified capstone video from release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/codex/fruit-merge-capstone'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p dist/media
+          gh release download capstone-video-v1 --repo "$GITHUB_REPOSITORY" --pattern Fruit_Merge_Capstone_Final_UA.mp4 --dir dist/media
+          echo '2082b9a788e34166d4f69a356b80e1dcca1d969a01d6b64ea9ae943158663e35  dist/media/Fruit_Merge_Capstone_Final_UA.mp4' | sha256sum --check
       - name: Package verified production site
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/codex/fruit-merge-capstone'
         uses: actions/upload-pages-artifact@v4

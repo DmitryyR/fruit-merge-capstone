@@ -1,0 +1,19 @@
+{
+  "Name": "Microsoft Server Speech Text to Speech Voice (uk-UA, OstapNeural)",
+  "ShortName": "uk-UA-OstapNeural",
+  "Gender": "Male",
+  "Locale": "uk-UA",
+  "LocaleName": "Ukrainian (Ukraine)",
+  "SuggestedCodec": "audio-24khz-48kbitrate-mono-mp3",
+  "FriendlyName": "Microsoft Ostap Online (Natural) - Ukrainian (Ukraine)",
+  "Status": "GA",
+  "VoiceTag": {
+    "ContentCategories": [
+      "General"
+    ],
+    "VoicePersonalities": [
+      "Friendly",
+      "Positive"
+    ]
+  }
+}

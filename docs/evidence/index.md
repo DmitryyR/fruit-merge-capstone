@@ -2,6 +2,19 @@
 
 04.10.2026. Базова версія: code revision e77427a, набір тестів 700d191. Наступний розділ окремо фіксує візуальне оновлення.
 
+## Фінальна відеопідготовка · 04.10.2026
+
+[Фінальне відео](https://dmitryyr.github.io/fruit-merge-capstone/capstone.html), [MP4/MP3/SRT release](https://github.com/DmitryyR/fruit-merge-capstone/releases/tag/capstone-video-v1), [технічне приймання](../submission/final-check.md). Остаточне приймання учасником і подання на платформі ще не виконані.
+
+| Практика | Застосування | Доказ | Що доведено | Статус |
+|---|---|---|---|---|
+| Контекст-інженерія | Резервувати обидва ID перед мутацією | [AGENTS](../../AGENTS.md), [реалізація](../../src/game/services/merge-coordinator.ts), [duplicate/reversed/shared test](../../tests/integration/merge-coordinator.test.ts) | Конкретне правило виконується й перевіряється | Історичне виконання + свіжа перевірка |
+| Верифікація | Повний авторський check з фактичним exit і станом | [лог](runs/capstone-final-check.log), [metadata](runs/capstone-final-check.json) | 76 unit +7 integration +33 browser, exit0, clean ffa173d | Виконано зараз; check одразу green |
+| Maker ≠ checker | Окремий read-only reviewer | [capstone-review](../reviews/capstone-review.md) | Новий аналіз коду та власні browser scenarios, без нових findings | Виконано зараз |
+| SDD | Вимоги до першої реалізації | [c941d33](https://github.com/DmitryyR/fruit-merge-capstone/commit/c941d33), [requirements](../requirements.md) | Специфікація справді передувала коду | Історичний доказ |
+| Loop engineering / regression | Reviewer defect → red → fix → повтор | [журнал](runs/agent-loop.md), [red](runs/review-physics-red.log), [fix](https://github.com/DmitryyR/fruit-merge-capstone/commit/e77427a), [green](runs/final-check.log) | Аналіз невдачі змінив порядок scale/collider; зупинка на green | Історичний доказ, не новий дефект |
+| Межа людини/агента | Концепт/референси/посудина/формула від користувача | [ролі](../submission/human-agent-roles.md) | Підтверджені рішення відокремлено від агентної реалізації | Зафіксовано; приймання pending |
+
 ## Оновлення оформлення
 
 [Погоджений план](../visual-refresh-plan.md), [макет](../design/approved-visual.png), [походження ресурсів](../asset-register.md). [Повний check оптимізованої версії](runs/visual-optimized-check.log): 68 unit + 6 integration + 24 browser, exit 0. [Перший check PNG-версії](runs/visual-check.log) теж успішний; це верифікація, а не новий TDD-цикл.
@@ -36,4 +49,4 @@ V-04: [окремий reviewer](../reviews/visual-8d2108b.md) схвалив 8d2
 
 Project Factory і журнал рівнів довіри як окремі практики не заявляються. Рішення людини: вимагати план до реалізації, погодити обсяг і стек, окремого checker, не додавати непотрібну фабрику. Агент реалізував код, тести, ресурси, виправлення та документацію. [Рішення](../decisions.md).
 
-Ім’я Dmitriy Remarenko вже внесене до PR. Відео та подання на платформі ще не виконані. [Сценарій відео](../submission/video-script.md) не видається за готове відео.
+Ім’я Dmitriy Remarenko збережене. Готове відео створено й опубліковано; [сценарій](../submission/video-script.md) описує фактичний монтаж. Подання на платформі потребує адреси завдання та фінального приймання.

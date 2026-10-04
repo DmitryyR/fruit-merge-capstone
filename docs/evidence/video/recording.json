@@ -1,0 +1,390 @@
+{
+  "recordedAt": "2026-10-04T14:26:18.682Z",
+  "revision": "ffa173db7db51a364c761de902b6bd7a6f758486",
+  "productTree": "5241134f516801909b7dd3c21e8acecb55f38269",
+  "gameplayTrimStart": 2.88,
+  "introSeconds": 12.219999999999999,
+  "gameplaySeconds": 26.5,
+  "events": [
+    {
+      "name": "prepared scene",
+      "seconds": 0,
+      "snapshot": {
+        "state": {
+          "mode": "playing",
+          "score": 0,
+          "bestScore": 0,
+          "currentRank": 1,
+          "nextRank": 2
+        },
+        "fruits": [
+          {
+            "id": "1:1",
+            "rank": 20,
+            "x": 110,
+            "y": 621.5516883318396,
+            "ageMs": 1616.6666666666683,
+            "collisionWidth": 148.106,
+            "radius": 74.59658203353818,
+            "visibleDiameter": 149.19316406707637,
+            "visibleCenterX": 110,
+            "visibleCenterY": 621.5516967773438,
+            "left": 35.947,
+            "right": 184.053,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:2",
+            "rank": 18,
+            "x": 358.6261131561084,
+            "y": 633.4399371974996,
+            "ageMs": 1616.6666666666683,
+            "collisionWidth": 126.15193419457557,
+            "radius": 63.06000008244628,
+            "visibleDiameter": 126.12000016489256,
+            "visibleCenterX": 358.6260986328125,
+            "visibleCenterY": 633.43994140625,
+            "left": 295.53390038002493,
+            "right": 421.6858345746005,
+            "bottom": 696.3277199535082
+          },
+          {
+            "id": "1:3",
+            "rank": 1,
+            "x": 240,
+            "y": 681.2210002777781,
+            "ageMs": 1616.6666666666683,
+            "collisionWidth": 29.658000000000015,
+            "radius": 15.120000000000001,
+            "visibleDiameter": 30.240000000000002,
+            "visibleCenterX": 240,
+            "visibleCenterY": 681.2210083007812,
+            "left": 225.171,
+            "right": 254.829,
+            "bottom": 696.3277780555558
+          }
+        ],
+        "simTime": 1616.6666666666683,
+        "textures": 30,
+        "collisionListeners": 1
+      }
+    },
+    {
+      "name": "real pointer drop",
+      "seconds": 17.782,
+      "snapshot": {
+        "state": {
+          "mode": "playing",
+          "score": 0,
+          "bestScore": 0,
+          "currentRank": 2,
+          "nextRank": 4
+        },
+        "fruits": [
+          {
+            "id": "1:1",
+            "rank": 20,
+            "x": 110,
+            "y": 621.5516883318396,
+            "ageMs": 19183.3333333333,
+            "collisionWidth": 148.106,
+            "radius": 74.59658203353818,
+            "visibleDiameter": 149.19316406707637,
+            "visibleCenterX": 110,
+            "visibleCenterY": 621.5516967773438,
+            "left": 35.947,
+            "right": 184.053,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:2",
+            "rank": 18,
+            "x": 358.35115619066187,
+            "y": 633.426384447571,
+            "ageMs": 19183.3333333333,
+            "collisionWidth": 126.11895634346405,
+            "radius": 63.06000008244628,
+            "visibleDiameter": 126.12000016489256,
+            "visibleCenterX": 358.3511657714844,
+            "visibleCenterY": 633.4263916015625,
+            "left": 295.29167802107287,
+            "right": 421.4106343645369,
+            "bottom": 696.3277780555429
+          },
+          {
+            "id": "1:3",
+            "rank": 1,
+            "x": 240,
+            "y": 681.2210002777781,
+            "ageMs": 19183.3333333333,
+            "collisionWidth": 29.658000000000015,
+            "radius": 15.120000000000001,
+            "visibleDiameter": 30.240000000000002,
+            "visibleCenterX": 240,
+            "visibleCenterY": 681.2210083007812,
+            "left": 225.171,
+            "right": 254.829,
+            "bottom": 696.3277780555558
+          },
+          {
+            "id": "1:4",
+            "rank": 1,
+            "x": 240,
+            "y": 72.83249999999998,
+            "ageMs": 33.333333333333336,
+            "collisionWidth": 29.658000000000015,
+            "radius": 15.120000000000001,
+            "visibleDiameter": 30.240000000000002,
+            "visibleCenterX": 240,
+            "visibleCenterY": 72.8324966430664,
+            "left": 225.171,
+            "right": 254.829,
+            "bottom": 88.2162222222222
+          }
+        ],
+        "simTime": 19183.3333333333,
+        "textures": 30,
+        "collisionListeners": 1
+      }
+    },
+    {
+      "name": "physical merge score10",
+      "seconds": 18.9,
+      "snapshot": {
+        "state": {
+          "mode": "playing",
+          "score": 10,
+          "bestScore": 10,
+          "currentRank": 2,
+          "nextRank": 4
+        },
+        "fruits": [
+          {
+            "id": "1:1",
+            "rank": 20,
+            "x": 110,
+            "y": 621.5516883318396,
+            "ageMs": 20333.333333333383,
+            "collisionWidth": 148.106,
+            "radius": 74.59658203353818,
+            "visibleDiameter": 149.19316406707637,
+            "visibleCenterX": 110,
+            "visibleCenterY": 621.5516967773438,
+            "left": 35.947,
+            "right": 184.053,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:2",
+            "rank": 18,
+            "x": 358.35115515326567,
+            "y": 633.4263843254515,
+            "ageMs": 20333.333333333383,
+            "collisionWidth": 126.11895634870234,
+            "radius": 63.06000008244628,
+            "visibleDiameter": 126.12000016489256,
+            "visibleCenterX": 358.3511657714844,
+            "visibleCenterY": 633.4263916015625,
+            "left": 295.2916769868649,
+            "right": 421.41063333556724,
+            "bottom": 696.3277780555078
+          },
+          {
+            "id": "1:5",
+            "rank": 2,
+            "x": 240,
+            "y": 670.6641205313335,
+            "ageMs": 66.66666666666667,
+            "collisionWidth": 32.389999999999986,
+            "radius": 16.445014929695976,
+            "visibleDiameter": 32.89002985939195,
+            "visibleCenterX": 240,
+            "visibleCenterY": 670.6641235351562,
+            "left": 223.805,
+            "right": 256.195,
+            "bottom": 688.2152416349447
+          }
+        ],
+        "simTime": 20333.333333333383,
+        "textures": 30,
+        "collisionListeners": 1
+      }
+    },
+    {
+      "name": "pause",
+      "seconds": 25.108,
+      "snapshot": {
+        "state": {
+          "mode": "paused",
+          "score": 10,
+          "bestScore": 10,
+          "currentRank": 4,
+          "nextRank": 5
+        },
+        "fruits": [
+          {
+            "id": "1:1",
+            "rank": 20,
+            "x": 110,
+            "y": 621.5516883318396,
+            "ageMs": 26433.333333333827,
+            "collisionWidth": 148.106,
+            "radius": 74.59658203353818,
+            "visibleDiameter": 149.19316406707637,
+            "visibleCenterX": 110,
+            "visibleCenterY": 621.5516967773438,
+            "left": 35.947,
+            "right": 184.053,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:2",
+            "rank": 18,
+            "x": 358.3511554520059,
+            "y": 633.4263843606186,
+            "ageMs": 26433.333333333827,
+            "collisionWidth": 126.11895633502922,
+            "radius": 63.06000008244628,
+            "visibleDiameter": 126.12000016489256,
+            "visibleCenterX": 358.3511657714844,
+            "visibleCenterY": 633.4263916015625,
+            "left": 295.29167728468644,
+            "right": 421.41063361971567,
+            "bottom": 696.3277780555546
+          },
+          {
+            "id": "1:5",
+            "rank": 2,
+            "x": 240,
+            "y": 679.7036883318395,
+            "ageMs": 6166.66666666669,
+            "collisionWidth": 32.389999999999986,
+            "radius": 16.445014929695976,
+            "visibleDiameter": 32.89002985939195,
+            "visibleCenterX": 240,
+            "visibleCenterY": 679.7036743164062,
+            "left": 223.805,
+            "right": 256.195,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:6",
+            "rank": 2,
+            "x": 290,
+            "y": 118.7021033970839,
+            "ageMs": 300,
+            "collisionWidth": 32.389999999999986,
+            "radius": 16.445014929695976,
+            "visibleDiameter": 32.89002985939195,
+            "visibleCenterX": 290,
+            "visibleCenterY": 118.70210266113281,
+            "left": 273.805,
+            "right": 306.195,
+            "bottom": 140.02162063861724
+          }
+        ],
+        "simTime": 26433.333333333827,
+        "textures": 30,
+        "collisionListeners": 1
+      }
+    },
+    {
+      "name": "resume",
+      "seconds": 27.148,
+      "snapshot": {
+        "state": {
+          "mode": "playing",
+          "score": 10,
+          "bestScore": 10,
+          "currentRank": 4,
+          "nextRank": 5
+        },
+        "fruits": [
+          {
+            "id": "1:1",
+            "rank": 20,
+            "x": 110,
+            "y": 621.5516883318396,
+            "ageMs": 26433.333333333827,
+            "collisionWidth": 148.106,
+            "radius": 74.59658203353818,
+            "visibleDiameter": 149.19316406707637,
+            "visibleCenterX": 110,
+            "visibleCenterY": 621.5516967773438,
+            "left": 35.947,
+            "right": 184.053,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:2",
+            "rank": 18,
+            "x": 358.3511554520059,
+            "y": 633.4263843606186,
+            "ageMs": 26433.333333333827,
+            "collisionWidth": 126.11895633502922,
+            "radius": 63.06000008244628,
+            "visibleDiameter": 126.12000016489256,
+            "visibleCenterX": 358.3511657714844,
+            "visibleCenterY": 633.4263916015625,
+            "left": 295.29167728468644,
+            "right": 421.41063361971567,
+            "bottom": 696.3277780555546
+          },
+          {
+            "id": "1:5",
+            "rank": 2,
+            "x": 240,
+            "y": 679.7036883318395,
+            "ageMs": 6166.66666666669,
+            "collisionWidth": 32.389999999999986,
+            "radius": 16.445014929695976,
+            "visibleDiameter": 32.89002985939195,
+            "visibleCenterX": 240,
+            "visibleCenterY": 679.7036743164062,
+            "left": 223.805,
+            "right": 256.195,
+            "bottom": 696.4264661096174
+          },
+          {
+            "id": "1:6",
+            "rank": 2,
+            "x": 290,
+            "y": 118.7021033970839,
+            "ageMs": 300,
+            "collisionWidth": 32.389999999999986,
+            "radius": 16.445014929695976,
+            "visibleDiameter": 32.89002985939195,
+            "visibleCenterX": 290,
+            "visibleCenterY": 118.70210266113281,
+            "left": 273.805,
+            "right": 306.195,
+            "bottom": 140.02162063861724
+          }
+        ],
+        "simTime": 26433.333333333827,
+        "textures": 30,
+        "collisionListeners": 1
+      }
+    },
+    {
+      "name": "restart preserves actual best",
+      "seconds": 30.559,
+      "snapshot": {
+        "state": {
+          "mode": "playing",
+          "score": 0,
+          "bestScore": 30,
+          "currentRank": 4,
+          "nextRank": 3
+        },
+        "fruits": [],
+        "simTime": 16.666666666666668,
+        "textures": 30,
+        "collisionListeners": 1
+      }
+    }
+  ],
+  "errors": [],
+  "preparedScene": true,
+  "realInput": true
+}
