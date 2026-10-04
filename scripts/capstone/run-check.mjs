@@ -1,0 +1,11 @@
+import {spawnSync} from 'node:child_process';
+import {writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const git=(...args)=>{const r=spawnSync('git',args,{encoding:'utf8'});if(r.status!==0)throw new Error(r.stderr);return r.stdout.trim();};
+const before={command:'node scripts/check.mjs (npm run check)',startedAt:new Date().toISOString(),revision:git('rev-parse','HEAD'),status:git('status','--short'),diffSha256:createHash('sha256').update(git('diff','HEAD')).digest('hex')};
+const run=spawnSync(process.execPath,['scripts/check.mjs'],{encoding:'utf8',maxBuffer:16*1024*1024});
+const exitCode=run.status??1;
+writeFileSync('docs/evidence/runs/capstone-final-check.log',(run.stdout??'')+(run.stderr??''));
+writeFileSync('docs/evidence/runs/capstone-final-check.json',JSON.stringify({...before,finishedAt:new Date().toISOString(),exitCode,error:run.error?.message??null},null,2));
+console.log((run.stdout??'').split('\n').slice(-14).join('\n'));console.log('Exit code:',exitCode);
+process.exit(exitCode);
