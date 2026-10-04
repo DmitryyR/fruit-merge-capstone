@@ -1,0 +1,157 @@
+{
+  "url": "https://dmitryyr.github.io/fruit-merge-capstone/",
+  "checkedAt": "2026-10-04T13:46:42.314Z",
+  "httpStatus": 200,
+  "desktop": "1440x900",
+  "mobile": "390x844",
+  "productionApiAbsent": true,
+  "dropGestures": 10,
+  "pauseAndRestart": true,
+  "diagnosticCards": 30,
+  "fruitAssets": 30,
+  "backgroundLoaded": true,
+  "failures": [],
+  "errors": [],
+  "assets": [
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/index-D9XR-YU1.css",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/index-6GldvIJP.js",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/orchard/background.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-28.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-05.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-07.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-23.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-10.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-24.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-08.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-01.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-25.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-02.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-15.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-14.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-16.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-18.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-22.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-29.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-19.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-09.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-20.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-06.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-04.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-21.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-17.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-30.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-03.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-12.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-26.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-11.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-27.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/fruits/fruit-13.webp",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/size-diagnostics-D0HId8gd.js",
+      200
+    ],
+    [
+      "https://dmitryyr.github.io/fruit-merge-capstone/assets/size-diagnostics-B56HxaF3.css",
+      200
+    ]
+  ]
+}

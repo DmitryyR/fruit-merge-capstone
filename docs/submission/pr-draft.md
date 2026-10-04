@@ -4,6 +4,8 @@ Dmitriy Remarenko
 
 ## Проєкт
 
+**[Грати онлайн — публічне демо](https://dmitryyr.github.io/fruit-merge-capstone/)** · [Діагностика 30 розмірів](https://dmitryyr.github.io/fruit-merge-capstone/?view=sizes). Працює у браузері без встановлення Node.js та без входу.
+
 «Фруктовий сад» — браузерна Fruit Merge: скидання мишею/дотиком, злиття однакових фруктів, 30 рівнів каталогу, очки, пауза, нова гра та локальний рекорд. Без сервера й акаунтів.
 
 **Де код:** [DmitryyR/fruit-merge-capstone](https://github.com/DmitryyR/fruit-merge-capstone/tree/7d966bd7106684e7b3c1ef2749143661010b74fc). У цьому PR додано лише `submissions/dmitry-fruit-merge/README.md`; кореневі файли курсу не змінені.
@@ -63,3 +65,8 @@ CHECK PASSED — types, lint, unit, integration, both builds, browsers, producti
 За прямим запитом учасника всі 30 радіусів переведено на геометричну прогресію 15.12..172.8 px (+8.7633% за рівень). Відкалібровано видиме тіло без прозорих полів/листя, фізика й спрайт мають спільний центр. Spawn і merge використовують одну конфігурацію; результат merge затискається над дном. Посудина, очки, черга й рекорд збережені. Додано read-only `?view=sizes` для всіх 30 рівнів.
 
 [Специфікація](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/fruit-size-plan.md), [таблиця до/після](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/fruit-diameters.md), [скриншот](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/screenshots/sizes-desktop.png), [журнал red→green](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-work-log.md), [незалежне рев'ю c568427](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/reviews/sizes-c568427.md): approve, actionable findings немає. [Фінальний check](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-check-2.log): 76 unit + 7 integration + 33 browser, exit 0. Сцени високих рівнів синтетичні.
+
+
+## Публікація
+
+GitHub Pages публікує production тільки після успішного повного check. [Перша успішна публікація 7defe3b](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37206623225). Публічну адресу перевірено в ізольованому Chromium: HTTP 200, 30 фруктів і фон без помилок, drop/pause/restart, desktop/mobile та діагностика; тестового API немає. Локальний рекорд збережений на локальній адресі, автоматичного перенесення між адресами немає. Живе демо не замінює ще не надане відео.

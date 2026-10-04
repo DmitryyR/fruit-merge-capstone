@@ -12,4 +12,12 @@ DEP-03: перевірити публічну гру в ізольованому
 
 Офіційні джерела: [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [Vite static deploy](https://vite.dev/guide/static-deploy.html). `vite preview` призначений для локальної перевірки збірки.
 
-Статус на момент підготовки: публікацію ще не підтверджено; наступний доказ — завершений Actions run та перевірка HTTPS-адреси.
+## Фактичний результат
+
+Опубліковано: **https://dmitryyr.github.io/fruit-merge-capstone/**. Pages build_type=workflow, HTTPS enforced. Ревізія першого deploy: `7defe3bfc49c3888e4808f67a77223a1a8765aef`.
+
+[Actions run 37206623225](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37206623225): check і deploy завершено success. [Збережений результат](evidence/runs/pages-deploy.json).
+
+`node scripts/verify-deployment.mjs` → exit 0. Ізольований Chromium без авторизації: HTTPS 200, 30 WebP фруктів + фон без помилок, 10 реальних drop-жестів, pause/restart, desktop 1440×900 та mobile 390×844 без горизонтального overflow, 30 canvas у діагностиці, production test API відсутній. [JSON перевірки](evidence/runs/public-deployment.json), [desktop](evidence/screenshots/public-desktop.png), [mobile](evidence/screenshots/public-mobile.png). Desktop-скриншот оглянуто; видно реальну партію з 40 очками після випадкової черги. Час у JSON UTC; перевірка виконана 04.10.2026 за Europe/Kiev.
+
+Тести запускалися у власному тимчасовому профілі. Відкрита локальна партія користувача та її рекорд не змінювалися. Реальний телефон і браузери поза Chromium цим прогоном не перевірялись.

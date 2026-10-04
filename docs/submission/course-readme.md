@@ -1,5 +1,7 @@
 # Фруктовий сад — Fruit Merge
 
+**[Грати онлайн](https://dmitryyr.github.io/fruit-merge-capstone/)** — без встановлення та входу. [Діагностика](https://dmitryyr.github.io/fruit-merge-capstone/?view=sizes).
+
 Браузерна гра зі злиттям фруктів, 30 рівнями каталогу, паузою, перезапуском і локальним рекордом. Стек: TypeScript, Vite, Phaser/Matter, Vitest, Playwright.
 
 - [Репозиторій гри](https://github.com/DmitryyR/fruit-merge-capstone).
@@ -22,3 +24,5 @@
 За прямим запитом учасника всі 30 радіусів переведено на геометричну прогресію 15.12..172.8 px (+8.7633% за рівень). Відкалібровано видиме тіло без прозорих полів/листя, фізика й спрайт мають спільний центр. Spawn і merge використовують одну конфігурацію; результат merge затискається над дном. Посудина, очки, черга й рекорд збережені. Додано read-only `?view=sizes` для всіх 30 рівнів.
 
 [Специфікація](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/fruit-size-plan.md), [таблиця до/після](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/fruit-diameters.md), [скриншот](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/screenshots/sizes-desktop.png), [журнал red→green](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-work-log.md), [незалежне рев'ю c568427](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/reviews/sizes-c568427.md): approve, actionable findings немає. [Фінальний check](https://github.com/DmitryyR/fruit-merge-capstone/blob/7d966bd7106684e7b3c1ef2749143661010b74fc/docs/evidence/runs/sizes-check-2.log): 76 unit + 7 integration + 33 browser, exit 0. Сцени високих рівнів синтетичні.
+
+Публічну версію перевірено без авторизації; [успішний check і deploy](https://github.com/DmitryyR/fruit-merge-capstone/actions/runs/37206623225). Деплой не замінює відео та подання PR на навчальній платформі.
