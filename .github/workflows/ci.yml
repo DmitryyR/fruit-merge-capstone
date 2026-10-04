@@ -15,6 +15,11 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run check
+      - name: Package verified production site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/codex/fruit-merge-capstone'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -23,3 +28,23 @@ jobs:
             playwright-report/
             test-results/
           retention-days: 14
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/codex/fruit-merge-capstone'
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publish verified site
+        id: deployment
+        uses: actions/deploy-pages@v4
